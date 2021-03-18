@@ -1,0 +1,243 @@
+nrf52832
+==============
+
+https://infocenter.nordicsemi.com/index.jsp?topic=%2Fstruct_nrf52%2Fstruct%2Fnrf52832.html&cp=3_2
+
+
+
+UART/Serial Port Emulation over BLE 
+--------------------------------------------
+
+This example requires one of the following SoftDevices: S132, S140
+
+Important: Before you run this example, make sure to program the SoftDevice.
+
+The Nordic UART Service (NUS) Application is an example that emulates a serial port over BLE. In the example, Nordic Semiconductor's development board serves as a peer to the phone application "nRF UART", which is available for iOS from App Store and for Android from Google Play. In addition, the example demonstrates how to use a proprietary (vendor-specific) service and characteristics with the SoftDevice.
+
+The application includes one service: the Nordic UART Service. 
+The 128-bit vendor-specific UUID of the Nordic UART Service is 6E400001-B5A3-F393-E0A9-E50E24DCCA9E (16-bit offset: 0x0001).
+
+This service exposes two characteristics: one for transmitting and one for receiving (as seen from the peer).
+
+**RX Characteristic (UUID: 6E400002-B5A3-F393-E0A9-E50E24DCCA9E)**
+
+The peer can send data to the device by writing to the RX Characteristic of the service. ATT Write Request or ATT Write Command can be used. The received data is sent on the UART interface.
+
+**TX Characteristic (UUID: 6E400003-B5A3-F393-E0A9-E50E24DCCA9E)**
+
+If the peer has enabled notifications for the TX Characteristic, the application can send data to the peer as notifications. The application will transmit all data received over UART as notifications.
+
+Important code lines
+----------------------------
+
+The following sections describe some important parts of the example code.
+
+Adding proprietary service and characteristics
+---------------------------------------------------------
+
+The initialization of the proprietary service and its characteristics is done in ble_nus.c.
+
+The Nordic UART Service is added to the SoftDevice as follows:
+
+.. code-block:: c
+
+    // Add a custom base UUID.
+    err_code = sd_ble_uuid_vs_add(&nus_base_uuid, &p_nus->uuid_type);
+    VERIFY_SUCCESS(err_code);
+
+    ble_uuid.type = p_nus->uuid_type;
+    ble_uuid.uuid = BLE_UUID_NUS_SERVICE;
+
+    // Add the service.
+    err_code = sd_ble_gatts_service_add(BLE_GATTS_SRVC_TYPE_PRIMARY,
+                                        &ble_uuid,
+                                        &p_nus->service_handle);
+
+The TX characteristic is added to the SoftDevice as shown in the code below. The read and write permissions of the characteristic and its CCCD are set as open, which means that there are no security restrictions on this characteristic. The type of the UUID (add_char_params.uuid_type) is the value that was returned in the call to sd_ble_uuid_vs_add(). The RX characteristic is added in a similar way.
+
+.. code-block:: c
+
+    memset(&add_char_params, 0, sizeof(add_char_params));
+    add_char_params.uuid              = BLE_UUID_NUS_TX_CHARACTERISTIC;
+    add_char_params.uuid_type         = p_nus->uuid_type;
+    add_char_params.max_len           = BLE_NUS_MAX_TX_CHAR_LEN;
+    add_char_params.init_len          = sizeof(uint8_t);
+    add_char_params.is_var_len        = true;
+    add_char_params.char_props.notify = 1;
+
+    add_char_params.read_access       = SEC_OPEN;
+    add_char_params.write_access      = SEC_OPEN;
+    add_char_params.cccd_write_access = SEC_OPEN;
+
+    return characteristic_add(p_nus->service_handle, &add_char_params, &p_nus->tx_handles);
+
+Initializing UART
+-----------------------------
+
+The initialization of the application and the handling of data sent and received through BLE and UART are done in main.c.
+
+The UART initialization is done as shown in the code below. The code segment uses the UART module that is provided in the SDK to perform the UART configuration. Note that app_uart_comm_params_t configures the application to use hardware flow control. Therefore, RTS_PIN_NUMBER and CTS_PIN_NUMBER are used as Ready-to-Send and Clear-to-Send pins, respectively.
+
+.. code-block:: c
+
+    static void uart_init(void)
+    {
+        uint32_t                     err_code;
+        app_uart_comm_params_t const comm_params =
+        {
+            .rx_pin_no    = RX_PIN_NUMBER,
+            .tx_pin_no    = TX_PIN_NUMBER,
+            .rts_pin_no   = RTS_PIN_NUMBER,
+            .cts_pin_no   = CTS_PIN_NUMBER,
+            .flow_control = APP_UART_FLOW_CONTROL_DISABLED,
+            .use_parity   = false,
+    #if defined (UART_PRESENT)
+            .baud_rate    = NRF_UART_BAUDRATE_115200
+    #else
+            .baud_rate    = NRF_UARTE_BAUDRATE_115200
+    #endif
+        };
+
+        APP_UART_FIFO_INIT(&comm_params,
+                           UART_RX_BUF_SIZE,
+                           UART_TX_BUF_SIZE,
+                           uart_event_handle,
+                           APP_IRQ_PRIORITY_LOWEST,
+                           err_code);
+        APP_ERROR_CHECK(err_code);
+    }
+
+Handling data received over BLE
+--------------------------------------------
+
+When initializing the service in the services_init() function, the application passes the function nus_data_handler, which is used for handling the received data. When the Nordic UART Service indicates that data has been received over BLE from the peer, the same data is relayed to the UART. The nus_data_handler function is implemented as follows:
+
+.. code-block:: c
+
+    static void nus_data_handler(ble_nus_evt_t * p_evt)
+    {
+
+        if (p_evt->type == BLE_NUS_EVT_RX_DATA)
+        {
+            uint32_t err_code;
+
+            NRF_LOG_DEBUG("Received data from BLE NUS. Writing data on UART.");
+            NRF_LOG_HEXDUMP_DEBUG(p_evt->params.rx_data.p_data, p_evt->params.rx_data.length);
+
+            for (uint32_t i = 0; i < p_evt->params.rx_data.length; i++)
+            {
+                do
+                {
+                    err_code = app_uart_put(p_evt->params.rx_data.p_data[i]);
+                    if ((err_code != NRF_SUCCESS) && (err_code != NRF_ERROR_BUSY))
+                    {
+                        NRF_LOG_ERROR("Failed receiving NUS message. Error 0x%x. ", err_code);
+                        APP_ERROR_CHECK(err_code);
+                    }
+                } while (err_code == NRF_ERROR_BUSY);
+            }
+            if (p_evt->params.rx_data.p_data[p_evt->params.rx_data.length - 1] == '\r')
+            {
+                while (app_uart_put('\n') == NRF_ERROR_BUSY);
+            }
+        }
+
+    }
+
+Handling data received over UART
+------------------------------------------
+
+Data that is received from the UART undergoes certain checks before it is relayed to the BLE peer using the Nordic UART Service. The code shown below is part of the app_uart event handler, which is called every time a character is received over the UART. Received characters are buffered into a string until a newline character is received or the size of the string matches the current MTU size. When one of these two conditions is met, the string is sent over BLE using the ble_nus_data_send function.
+
+The implementation of the example requires the newline character to be '\n'. Some terminals use different characters to trigger a newline, for example '\r'. Therefore, you might need to configure your terminal to interpret only '\n' as a newline.
+
+.. code-block:: c
+
+    void uart_event_handle(app_uart_evt_t * p_event)
+    {
+        static uint8_t data_array[BLE_NUS_MAX_DATA_LEN];
+        static uint8_t index = 0;
+        uint32_t       err_code;
+
+        switch (p_event->evt_type)
+        {
+            case APP_UART_DATA_READY:
+                UNUSED_VARIABLE(app_uart_get(&data_array[index]));
+                index++;
+
+                if ((data_array[index - 1] == '\n') ||
+                    (data_array[index - 1] == '\r') ||
+                    (index >= m_ble_nus_max_data_len))
+                {
+                    if (index > 1)
+                    {
+                        NRF_LOG_DEBUG("Ready to send data over BLE NUS");
+                        NRF_LOG_HEXDUMP_DEBUG(data_array, index);
+
+                        do
+                        {
+                            uint16_t length = (uint16_t)index;
+                            err_code = ble_nus_data_send(&m_nus, data_array, &length, m_conn_handle);
+                            if ((err_code != NRF_ERROR_INVALID_STATE) &&
+                                (err_code != NRF_ERROR_RESOURCES) &&
+                                (err_code != NRF_ERROR_NOT_FOUND))
+                            {
+                                APP_ERROR_CHECK(err_code);
+                            }
+                        } while (err_code == NRF_ERROR_RESOURCES);
+                    }
+
+                    index = 0;
+                }
+                break;
+
+            case APP_UART_COMMUNICATION_ERROR:
+                APP_ERROR_HANDLER(p_event->data.error_communication);
+                break;
+
+            case APP_UART_FIFO_ERROR:
+                APP_ERROR_HANDLER(p_event->data.error_code);
+                break;
+
+            default:
+                break;
+        }
+    }
+
+Setup
+-------------
+
+You can find the source code and the project file of the example in the following folder: <InstallFolder>\examples\ble_peripheral\ble_app_uart 
+
+LED assignments:
+
+* Advertising mode: LED 1 is blinking (period 2 seconds, duty cycle 10%).
+* Connected mode: LED 1 is on.
+
+Button assignments: BSP BLE Button Assignments
+
+Testing
+------------
+
+Test the UART Application with the nRF UART app, which is available for iOS (App Store) and Android (Google Play).
+
+You can also test the application with nRF Connect by performing the following steps:
+
+* Connect the board to the computer using a USB cable. The board is assigned a COM port, which is visible in the Device Manager.
+* Start a terminal emulator like PuTTY and connect to the used COM port with the following UART settings:
+ 
+     * Baud rate: 115.200
+     * 8 data bits
+     * 1 stop bit
+     * No parity
+     * HW flow control: None
+ 
+* Compile and program the application. Observe that the BSP_INDICATE_ADVERTISING state is indicated, and that the device is advertising with the device name "Nordic_UART".
+* Observe that the text "UART Start!" is printed on the COM listener running on the computer.
+* Connect to the device from nRF Connect. Observe that the BSP_INDICATE_CONNECTED state is indicated.
+* Observe that the services are shown in the connected device.
+* Select the UART RX characteristic value in nRF Connect. You can write hexadecimal ASCII values to the UART RX and get the text displayed on the COM listener.
+* Write '30 31 32 33 34 35 36 37 38 39' (the hexadecimal value for the string "0123456789") and click 'write'. Verify that the text "0123456789" is displayed on the COM listener.
+* For sending data from the device to nRF Connect, enter any text, for example, "Hello", on the COM listener. Observe that a notification with the corresponding ASCII values is sent to the peer on handle 0x12. For the string "Hello", the notification is '48 65 6C 6C 6F'.
+* Disconnect the device in nRF Connect. Observe that the BSP_INDICATE_ADVERTISING state is indicated.
+* If no peer connects to the application within 180 seconds (APP_ADV_TIMEOUT_IN_SECONDS), the application will put the chip into system-off mode. 
