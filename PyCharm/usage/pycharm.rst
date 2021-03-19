@@ -1,0 +1,12 @@
+PyCharm指南
+====================
+
+`PyCharm报Error running: Cannot run program : CreateProcess error=2, 系统找不到指定的文件解决办法`_
+
+场景
+
+在使用PyCharm运行python代码时报错： Error running testone: Cannot run program "D:\python.exe" (in directory "E:"): CreateProcess error=2, 系统找不到指定的文件。
+
+
+
+.. _`PyCharm报Error running: Cannot run program : CreateProcess error=2, 系统找不到指定的文件解决办法`: https://www.jianshu.com/p/990d35c4a051
