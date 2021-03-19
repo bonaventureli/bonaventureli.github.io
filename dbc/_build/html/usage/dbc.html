@@ -1,0 +1,875 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>dbc &#8212; dbc  documentation</title>
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/alabaster.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Welcome to dbc’s documentation!" href="../index.html" />
+   
+  <link rel="stylesheet" href="../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <div class="section" id="dbc">
+<h1>dbc<a class="headerlink" href="#dbc" title="Permalink to this headline">¶</a></h1>
+<img alt="../_images/network_node.png" src="../_images/network_node.png" />
+<img alt="../_images/messages.png" src="../_images/messages.png" />
+<img alt="../_images/signals.png" src="../_images/signals.png" />
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">VERSION</span> <span class="s2">&quot;&quot;</span>
+
+
+<span class="n">NS_</span> <span class="p">:</span>
+        <span class="n">NS_DESC_</span>
+        <span class="n">CM_</span>
+        <span class="n">BA_DEF_</span>
+        <span class="n">BA_</span>
+        <span class="n">VAL_</span>
+        <span class="n">CAT_DEF_</span>
+        <span class="n">CAT_</span>
+        <span class="n">FILTER</span>
+        <span class="n">BA_DEF_DEF_</span>
+        <span class="n">EV_DATA_</span>
+        <span class="n">ENVVAR_DATA_</span>
+        <span class="n">SGTYPE_</span>
+        <span class="n">SGTYPE_VAL_</span>
+        <span class="n">BA_DEF_SGTYPE_</span>
+        <span class="n">BA_SGTYPE_</span>
+        <span class="n">SIG_TYPE_REF_</span>
+        <span class="n">VAL_TABLE_</span>
+        <span class="n">SIG_GROUP_</span>
+        <span class="n">SIG_VALTYPE_</span>
+        <span class="n">SIGTYPE_VALTYPE_</span>
+        <span class="n">BO_TX_BU_</span>
+        <span class="n">BA_DEF_REL_</span>
+        <span class="n">BA_REL_</span>
+        <span class="n">BA_DEF_DEF_REL_</span>
+        <span class="n">BU_SG_REL_</span>
+        <span class="n">BU_EV_REL_</span>
+        <span class="n">BU_BO_REL_</span>
+        <span class="n">SG_MUL_VAL_</span>
+
+<span class="n">BS_</span><span class="p">:</span>
+
+<span class="n">BU_</span><span class="p">:</span> <span class="n">AC</span> <span class="n">BCM</span> <span class="n">BCU</span> <span class="n">DCM</span> <span class="n">EPB</span> <span class="n">EPS</span> <span class="n">HMI</span> <span class="n">MCU</span> <span class="n">OBC</span> <span class="n">TESTER</span> <span class="n">VCU</span>
+
+
+<span class="n">BO_</span> <span class="mi">1036</span> <span class="n">BCM_NM</span><span class="p">:</span> <span class="mi">8</span> <span class="n">BCM</span>
+ <span class="n">SG_</span> <span class="n">BCM_SleepCommand</span> <span class="p">:</span> <span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">VCU</span><span class="p">,</span><span class="n">MCU</span><span class="p">,</span><span class="n">BCU</span><span class="p">,</span><span class="n">DCM</span><span class="p">,</span><span class="n">HMI</span><span class="p">,</span><span class="n">EPB</span><span class="p">,</span><span class="n">OBC</span>
+
+<span class="n">BO_</span> <span class="mi">1050</span> <span class="n">OBC_NM</span><span class="p">:</span> <span class="mi">8</span> <span class="n">OBC</span>
+ <span class="n">SG_</span> <span class="n">OBC_SleepConditionsReady</span> <span class="p">:</span> <span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">BCM</span>
+ <span class="n">SG_</span> <span class="n">OBC_Stayawake_reasons1_InputVoltage</span> <span class="p">:</span> <span class="mi">16</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+ <span class="n">SG_</span> <span class="n">OBC_Stayawake_reasons2_LowBatteryCharging</span> <span class="p">:</span> <span class="mi">17</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+ <span class="n">SG_</span> <span class="n">OBC_BCUSleepConditionsNotReady</span> <span class="p">:</span> <span class="mi">18</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+
+<span class="n">BO_</span> <span class="mi">1562</span> <span class="n">OBC_Diagnosis</span><span class="p">:</span> <span class="mi">8</span> <span class="n">OBC</span>
+ <span class="n">SG_</span> <span class="n">OBC_OutputOvervoltageFault</span> <span class="p">:</span> <span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+ <span class="n">SG_</span> <span class="n">OBC_OutputOvervoltageLowFault</span> <span class="p">:</span> <span class="mi">1</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+ <span class="n">SG_</span> <span class="n">OBC_OutputShortCircuitFault</span> <span class="p">:</span> <span class="mi">2</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+ <span class="n">SG_</span> <span class="n">OBC_TemperatureTooHighFault</span> <span class="p">:</span> <span class="mi">3</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+ <span class="n">SG_</span> <span class="n">OBC_LowTemperatureShutdownFault</span> <span class="p">:</span> <span class="mi">4</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+ <span class="n">SG_</span> <span class="n">OBC_SoftwareVersion</span> <span class="p">:</span> <span class="mi">55</span><span class="o">|</span><span class="mi">8</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">255</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+ <span class="n">SG_</span> <span class="n">OBC_AC_Input220VoltageFault</span> <span class="p">:</span> <span class="mi">5</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+ <span class="n">SG_</span> <span class="n">OBC_HardwareVersion</span> <span class="p">:</span> <span class="mi">63</span><span class="o">|</span><span class="mi">8</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">255</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+ <span class="n">SG_</span> <span class="n">OBC_OutputOverCurrentProtection</span> <span class="p">:</span> <span class="mi">6</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+ <span class="n">SG_</span> <span class="n">OBC_LossCommunicationWithBCU</span> <span class="p">:</span> <span class="mi">7</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+ <span class="n">SG_</span> <span class="n">OBC_BusOff</span> <span class="p">:</span> <span class="mi">8</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">Vector__XXX</span>
+
+<span class="n">BO_</span> <span class="mi">2003</span> <span class="n">TEST_OBC_DiagReq</span><span class="p">:</span> <span class="mi">8</span> <span class="n">TESTER</span>
+ <span class="n">SG_</span> <span class="n">TEST_EPB_DiagReq</span> <span class="p">:</span> <span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">OBC</span>
+
+<span class="n">BO_</span> <span class="mi">2011</span> <span class="n">OBC_DiagResp</span><span class="p">:</span> <span class="mi">8</span> <span class="n">OBC</span>
+ <span class="n">SG_</span> <span class="n">EPB_DiagResp</span> <span class="p">:</span> <span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">TESTER</span>
+
+<span class="n">BO_</span> <span class="mi">2015</span> <span class="n">TEST_Func_DiagReq</span><span class="p">:</span> <span class="mi">8</span> <span class="n">TESTER</span>
+ <span class="n">SG_</span> <span class="n">TEST_Func_DiagReq</span> <span class="p">:</span> <span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">VCU</span><span class="p">,</span><span class="n">MCU</span><span class="p">,</span><span class="n">BCU</span><span class="p">,</span><span class="n">AC</span><span class="p">,</span><span class="n">BCM</span><span class="p">,</span><span class="n">DCM</span><span class="p">,</span><span class="n">HMI</span><span class="p">,</span><span class="n">EPS</span><span class="p">,</span><span class="n">EPB</span><span class="p">,</span><span class="n">OBC</span>
+
+<span class="n">BO_</span> <span class="mi">530</span> <span class="n">BCM_LightStatus</span><span class="p">:</span> <span class="mi">8</span> <span class="n">BCM</span>
+ <span class="n">SG_</span> <span class="n">BCM_PowerMode</span> <span class="p">:</span> <span class="mi">11</span><span class="o">|</span><span class="mi">3</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">7</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">VCU</span><span class="p">,</span><span class="n">DCM</span><span class="p">,</span><span class="n">HMI</span><span class="p">,</span><span class="n">EPB</span><span class="p">,</span><span class="n">OBC</span>
+
+<span class="n">BO_</span> <span class="mi">784</span> <span class="n">VCU_DisplayInfo</span><span class="p">:</span> <span class="mi">8</span> <span class="n">VCU</span>
+ <span class="n">SG_</span> <span class="n">VCU_VehicleOpratingMode</span> <span class="p">:</span> <span class="mi">6</span><span class="o">|</span><span class="mi">2</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">3</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">MCU</span><span class="p">,</span><span class="n">BCU</span><span class="p">,</span><span class="n">HMI</span><span class="p">,</span><span class="n">OBC</span>
+ <span class="n">SG_</span> <span class="n">VCU_LowBatteryChargingFunctionState</span> <span class="p">:</span> <span class="mi">31</span><span class="o">|</span><span class="mi">2</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">3</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">BCU</span><span class="p">,</span><span class="n">OBC</span>
+
+<span class="n">BO_</span> <span class="mi">791</span> <span class="n">BCU_ChargeControl</span><span class="p">:</span> <span class="mi">8</span> <span class="n">BCU</span>
+ <span class="n">SG_</span> <span class="n">BCU_ChargeControlStatus</span> <span class="p">:</span> <span class="mi">8</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">OBC</span>
+ <span class="n">SG_</span> <span class="n">BCU_CurrentChargeState</span> <span class="p">:</span> <span class="mi">10</span><span class="o">|</span><span class="mi">2</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">3</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">VCU</span><span class="p">,</span><span class="n">MCU</span><span class="p">,</span><span class="n">HMI</span><span class="p">,</span><span class="n">OBC</span>
+ <span class="n">SG_</span> <span class="n">BCU_ChargingVoltageSet</span> <span class="p">:</span> <span class="mi">23</span><span class="o">|</span><span class="mi">16</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mf">655.35</span><span class="p">]</span> <span class="s2">&quot;V&quot;</span> <span class="n">OBC</span>
+ <span class="n">SG_</span> <span class="n">BCU_ChargingCurrentSet</span> <span class="p">:</span> <span class="mi">39</span><span class="o">|</span><span class="mi">8</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mf">25.5</span><span class="p">]</span> <span class="s2">&quot;A&quot;</span> <span class="n">OBC</span>
+
+<span class="n">BO_</span> <span class="mi">796</span> <span class="n">BCU_StatusIndication</span><span class="p">:</span> <span class="mi">8</span> <span class="n">BCU</span>
+ <span class="n">SG_</span> <span class="n">BCU_OBCSleepConditionsReady</span> <span class="p">:</span> <span class="mi">50</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">OBC</span>
+
+<span class="n">BO_</span> <span class="mi">852</span> <span class="n">OBC_CurrentStatus</span><span class="p">:</span> <span class="mi">8</span> <span class="n">OBC</span>
+ <span class="n">SG_</span> <span class="n">OBC_StartStatus</span> <span class="p">:</span> <span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">BCU</span>
+ <span class="n">SG_</span> <span class="n">OBC_SystemFailure</span> <span class="p">:</span> <span class="mi">1</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">BCU</span>
+ <span class="n">SG_</span> <span class="n">OBC_AC_Input220VoltageSupply</span> <span class="p">:</span> <span class="mi">2</span><span class="o">|</span><span class="mi">1</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mi">1</span><span class="p">]</span> <span class="s2">&quot;bit&quot;</span> <span class="n">BCU</span>
+ <span class="n">SG_</span> <span class="n">OBC_DC_OutputVoltage</span> <span class="p">:</span> <span class="mi">39</span><span class="o">|</span><span class="mi">16</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mf">0.01</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mf">655.35</span><span class="p">]</span> <span class="s2">&quot;V&quot;</span> <span class="n">BCU</span>
+ <span class="n">SG_</span> <span class="n">OBC_DC_OutputCurrent</span> <span class="p">:</span> <span class="mi">55</span><span class="o">|</span><span class="mi">8</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mf">0.1</span><span class="p">,</span><span class="mi">0</span><span class="p">)</span> <span class="p">[</span><span class="mi">0</span><span class="o">|</span><span class="mf">25.5</span><span class="p">]</span> <span class="s2">&quot;A&quot;</span> <span class="n">BCU</span>
+ <span class="n">SG_</span> <span class="n">OBC_Temperature</span> <span class="p">:</span> <span class="mi">63</span><span class="o">|</span><span class="mi">8</span><span class="o">@</span><span class="mi">0</span><span class="o">+</span> <span class="p">(</span><span class="mi">1</span><span class="p">,</span><span class="o">-</span><span class="mi">40</span><span class="p">)</span> <span class="p">[</span><span class="o">-</span><span class="mi">40</span><span class="o">|</span><span class="mi">214</span><span class="p">]</span> <span class="s2">&quot;℃&quot;</span> <span class="n">Vector__XXX</span>
+
+
+<span class="n">CM_</span> <span class="s2">&quot; &quot;</span><span class="p">;</span>
+
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">852</span> <span class="n">OBC_StartStatus</span> <span class="s2">&quot;OBC启动状态&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">852</span> <span class="n">OBC_SystemFailure</span> <span class="s2">&quot;OBC系统故障&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">852</span> <span class="n">OBC_AC_Input220VoltageSupply</span> <span class="s2">&quot;OBC指示充电机交流输入220V电压是否加载&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">852</span> <span class="n">OBC_DC_OutputVoltage</span> <span class="s2">&quot;OBC充电机直流输出电压&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">852</span> <span class="n">OBC_DC_OutputCurrent</span> <span class="s2">&quot;OBC充电机直流输出电流&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">852</span> <span class="n">OBC_Temperature</span> <span class="s2">&quot;OBC车载充电机温度&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1050</span> <span class="n">OBC_SleepConditionsReady</span> <span class="s2">&quot;OBC睡眠条件满足标志位&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1050</span> <span class="n">OBC_Stayawake_reasons1_InputVoltage</span> <span class="s2">&quot;OBC指示保持唤醒原因1_输入交流电压存在且充电未完成&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1050</span> <span class="n">OBC_Stayawake_reasons2_LowBatteryCharging</span> <span class="s2">&quot;OBC指示保持唤醒原因2_小电池电量低充电开始&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1050</span> <span class="n">OBC_BCUSleepConditionsNotReady</span> <span class="s2">&quot;OBC指示保持唤醒原因3_BCU睡眠条件不满足&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1562</span> <span class="n">OBC_OutputOvervoltageFault</span> <span class="s2">&quot;OBC指示输出过压故障&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1562</span> <span class="n">OBC_OutputOvervoltageLowFault</span> <span class="s2">&quot;OBC指示输出欠压故障&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1562</span> <span class="n">OBC_OutputShortCircuitFault</span> <span class="s2">&quot;OBC指示输出短路故障&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1562</span> <span class="n">OBC_TemperatureTooHighFault</span> <span class="s2">&quot;OBC指示过温故障&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1562</span> <span class="n">OBC_LowTemperatureShutdownFault</span> <span class="s2">&quot;OBC指示低温关机告警（故障）&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1562</span> <span class="n">OBC_SoftwareVersion</span> <span class="s2">&quot;OBC软件版本号&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1562</span> <span class="n">OBC_AC_Input220VoltageFault</span> <span class="s2">&quot;OBC充电机交流输入220电压故障状态&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1562</span> <span class="n">OBC_HardwareVersion</span> <span class="s2">&quot;OBC硬件版本号&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1562</span> <span class="n">OBC_OutputOverCurrentProtection</span> <span class="s2">&quot;OBC指示输出过流保护&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1562</span> <span class="n">OBC_LossCommunicationWithBCU</span> <span class="s2">&quot;OBC与BCU节点丢失通信&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1562</span> <span class="n">OBC_BusOff</span> <span class="s2">&quot;OBC指示BusOff&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">2011</span> <span class="n">EPB_DiagResp</span> <span class="s2">&quot;EPB诊断响应&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">784</span> <span class="n">VCU_VehicleOpratingMode</span> <span class="s2">&quot;VCU指示当前车辆运行模式&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">784</span> <span class="n">VCU_LowBatteryChargingFunctionState</span> <span class="s2">&quot;VCU指示低压蓄电池充电功能状态&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">791</span> <span class="n">BCU_ChargeControlStatus</span> <span class="s2">&quot;BCU指示充电机控制状态&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">791</span> <span class="n">BCU_CurrentChargeState</span> <span class="s2">&quot;BCU指示当前充电状态&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">791</span> <span class="n">BCU_ChargingVoltageSet</span> <span class="s2">&quot;BCU指示充电电压设置&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">791</span> <span class="n">BCU_ChargingCurrentSet</span> <span class="s2">&quot;BCU指示充电电流设置&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">796</span> <span class="n">BCU_OBCSleepConditionsReady</span> <span class="s2">&quot;BCU指示睡眠条件满足（OBC用于睡眠条件判断）&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">530</span> <span class="n">BCM_PowerMode</span> <span class="s2">&quot;BCM指示电源模式&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">1036</span> <span class="n">BCM_SleepCommand</span> <span class="s2">&quot;BCM信号提示睡眠指令&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">2003</span> <span class="n">TEST_EPB_DiagReq</span> <span class="s2">&quot;TEST_EPB诊断请求&quot;</span><span class="p">;</span>
+<span class="n">CM_</span> <span class="n">SG_</span> <span class="mi">2015</span> <span class="n">TEST_Func_DiagReq</span> <span class="s2">&quot;TEST_ALL功能寻址诊断请求&quot;</span><span class="p">;</span>
+
+
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;NmMessage&quot;</span> <span class="n">ENUM</span> <span class="s2">&quot;No&quot;</span><span class="p">,</span><span class="s2">&quot;Yes&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;DiagState&quot;</span> <span class="n">ENUM</span>  <span class="s2">&quot;No&quot;</span><span class="p">,</span><span class="s2">&quot;Yes&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;DiagRequest&quot;</span> <span class="n">ENUM</span>  <span class="s2">&quot;No&quot;</span><span class="p">,</span><span class="s2">&quot;Yes&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;DiagResponse&quot;</span> <span class="n">ENUM</span>  <span class="s2">&quot;No&quot;</span><span class="p">,</span><span class="s2">&quot;Yes&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;GenMsgSendType&quot;</span> <span class="n">ENUM</span>  <span class="s2">&quot;Cycle&quot;</span><span class="p">,</span><span class="s2">&quot;NoSendType&quot;</span><span class="p">,</span><span class="s2">&quot;IfActive&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;GenMsgCycleTime&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">SG_</span>  <span class="s2">&quot;GenSigSendType&quot;</span> <span class="n">ENUM</span>  <span class="s2">&quot;Cycle&quot;</span><span class="p">,</span><span class="s2">&quot;OnChange&quot;</span><span class="p">,</span><span class="s2">&quot;OnWrite&quot;</span><span class="p">,</span><span class="s2">&quot;IfActive&quot;</span><span class="p">,</span><span class="s2">&quot;OnChangeWithRepetition&quot;</span><span class="p">,</span><span class="s2">&quot;OnWriteWithRepetition&quot;</span><span class="p">,</span><span class="s2">&quot;IfActiveWithRepetition&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">SG_</span>  <span class="s2">&quot;GenSigStartValue&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">SG_</span>  <span class="s2">&quot;GenSigInactiveValue&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;GenMsgCycleTimeFast&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;GenMsgNrOfRepetition&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;GenMsgDelayTime&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;DBName&quot;</span> <span class="n">STRING</span> <span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;NodeLayerModules&quot;</span> <span class="n">STRING</span> <span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">SG_</span>  <span class="s2">&quot;GenSigTimeoutValue&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">1000000000</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;GenMsgCycleTimeActive&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;ILUsed&quot;</span> <span class="n">ENUM</span>  <span class="s2">&quot;No&quot;</span><span class="p">,</span><span class="s2">&quot;Yes&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;TpNodeBaseAddress&quot;</span> <span class="n">HEX</span> <span class="mi">0</span> <span class="mi">2047</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;TpTxIdentifier&quot;</span> <span class="n">HEX</span> <span class="mi">0</span> <span class="mi">2047</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;TpRxIdentifier&quot;</span> <span class="n">HEX</span> <span class="mi">0</span> <span class="mi">2047</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;TpRxMask&quot;</span> <span class="n">HEX</span> <span class="mi">0</span> <span class="mi">2047</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;TpCanBus&quot;</span> <span class="n">INT</span> <span class="mi">1</span> <span class="mi">2</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;TpTxAdrMode&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;TpAddressExtension&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">100000000</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;TpSTMin&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">1000000000</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;TpBlockSize&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">10000000</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;TpAddressingMode&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">4</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;TpTargetAddress&quot;</span> <span class="n">HEX</span> <span class="mi">0</span> <span class="mi">255</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;TpUseFC&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;DiagStationAddress&quot;</span> <span class="n">HEX</span> <span class="mi">0</span> <span class="mi">255</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;NmNode&quot;</span> <span class="n">ENUM</span>  <span class="s2">&quot;Not&quot;</span><span class="p">,</span><span class="s2">&quot;Yes&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;NmStationAddress&quot;</span> <span class="n">HEX</span> <span class="mi">0</span> <span class="mi">65535</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BU_</span>  <span class="s2">&quot;NmCAN&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">2</span><span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;Manufacturer&quot;</span> <span class="n">STRING</span> <span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;VersionYear&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">99</span><span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;VersionMonth&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">12</span><span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;VersionWeek&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">52</span><span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;VersionDay&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">31</span><span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;VersionNumber&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;TpBaseAddress&quot;</span> <span class="n">HEX</span> <span class="mi">0</span> <span class="mi">2047</span><span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;NmType&quot;</span> <span class="n">STRING</span> <span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;NmBaseAddress&quot;</span> <span class="n">HEX</span> <span class="mi">0</span> <span class="mi">2047</span><span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;NmMessageCount&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">255</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;_Cdb_Sc_CTm_FAW_v3_0&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;_Cdb_Sc_CTm_FAW_v2_3&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;_Cdb_Sc_CTm_FAW_v3_1&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">EV_</span>  <span class="s2">&quot;GenEnvAutoGenCtrl&quot;</span> <span class="n">ENUM</span>  <span class="s2">&quot;No&quot;</span><span class="p">,</span><span class="s2">&quot;Yes&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">EV_</span>  <span class="s2">&quot;GenEnvMsgOffset&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">2147483647</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">EV_</span>  <span class="s2">&quot;GenEnvMsgName&quot;</span> <span class="n">STRING</span> <span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">EV_</span>  <span class="s2">&quot;GenEnvIsGeneratedSnd&quot;</span> <span class="n">ENUM</span>  <span class="s2">&quot;No&quot;</span><span class="p">,</span><span class="s2">&quot;Yes&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">SG_</span>  <span class="s2">&quot;GenSigEnvVarType&quot;</span> <span class="n">ENUM</span>  <span class="s2">&quot;int&quot;</span><span class="p">,</span><span class="s2">&quot;float&quot;</span><span class="p">,</span><span class="s2">&quot;undef&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;GenEnvVarPrefix&quot;</span> <span class="n">STRING</span> <span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;GenEnvVarEndingSnd&quot;</span> <span class="n">STRING</span> <span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;GenEnvVarEndingDsp&quot;</span> <span class="n">STRING</span> <span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;_Cdb_Sc_CTm_FAW_v2_2&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;_Cdb_Sc_CTm_FAW_v2_1&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;GenMsgILSupport&quot;</span> <span class="n">ENUM</span>  <span class="s2">&quot;No&quot;</span><span class="p">,</span><span class="s2">&quot;Yes&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">BO_</span>  <span class="s2">&quot;GenMsgStartDelayTime&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">65535</span><span class="p">;</span>
+<span class="n">BA_DEF_</span>  <span class="s2">&quot;BusType&quot;</span> <span class="n">STRING</span> <span class="p">;</span>
+<span class="n">BA_DEF_</span> <span class="n">SG_</span>  <span class="s2">&quot;SystemSignalLongSymbol&quot;</span> <span class="n">STRING</span> <span class="p">;</span>
+<span class="n">BA_DEF_REL_</span> <span class="n">BU_SG_REL_</span>  <span class="s2">&quot;GenSigTimeoutTime&quot;</span> <span class="n">INT</span> <span class="mi">0</span> <span class="mi">10000000</span><span class="p">;</span>
+<span class="n">BA_DEF_REL_</span> <span class="n">BU_SG_REL_</span>  <span class="s2">&quot;GenSigTimeoutMsg&quot;</span> <span class="n">HEX</span> <span class="mi">0</span> <span class="mi">2047</span><span class="p">;</span>
+
+
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;NmMessage&quot;</span> <span class="s2">&quot;No&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;DiagState&quot;</span> <span class="s2">&quot;No&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;DiagRequest&quot;</span> <span class="s2">&quot;No&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;DiagResponse&quot;</span> <span class="s2">&quot;No&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenMsgSendType&quot;</span> <span class="s2">&quot;Cycle&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenMsgCycleTime&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenSigSendType&quot;</span> <span class="s2">&quot;Cycle&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenSigStartValue&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenSigInactiveValue&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenMsgCycleTimeFast&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenMsgNrOfRepetition&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenMsgDelayTime&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;DBName&quot;</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;NodeLayerModules&quot;</span> <span class="s2">&quot;CANoeILNLVector.dll&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenSigTimeoutValue&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenMsgCycleTimeActive&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;ILUsed&quot;</span> <span class="s2">&quot;No&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpNodeBaseAddress&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpTxIdentifier&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpRxIdentifier&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpRxMask&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpCanBus&quot;</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpTxAdrMode&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpAddressExtension&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpSTMin&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpBlockSize&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpAddressingMode&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpTargetAddress&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpUseFC&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;DiagStationAddress&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;NmNode&quot;</span> <span class="s2">&quot;Not&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;NmStationAddress&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;NmCAN&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;Manufacturer&quot;</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;VersionYear&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;VersionMonth&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;VersionWeek&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;VersionDay&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;VersionNumber&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;TpBaseAddress&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;NmType&quot;</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;NmBaseAddress&quot;</span> <span class="mi">1024</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;NmMessageCount&quot;</span> <span class="mi">128</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;_Cdb_Sc_CTm_FAW_v3_0&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;_Cdb_Sc_CTm_FAW_v2_3&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;_Cdb_Sc_CTm_FAW_v3_1&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenEnvAutoGenCtrl&quot;</span> <span class="s2">&quot;No&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenEnvMsgOffset&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenEnvMsgName&quot;</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenEnvIsGeneratedSnd&quot;</span> <span class="s2">&quot;No&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenSigEnvVarType&quot;</span> <span class="s2">&quot;undef&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenEnvVarPrefix&quot;</span> <span class="s2">&quot;Env&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenEnvVarEndingSnd&quot;</span> <span class="s2">&quot;_&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenEnvVarEndingDsp&quot;</span> <span class="s2">&quot;Dsp_&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;_Cdb_Sc_CTm_FAW_v2_2&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;_Cdb_Sc_CTm_FAW_v2_1&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenMsgILSupport&quot;</span> <span class="s2">&quot;No&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;GenMsgStartDelayTime&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;BusType&quot;</span> <span class="s2">&quot;CAN&quot;</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_REL_</span> <span class="s2">&quot;GenSigTimeoutTime&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_REL_</span> <span class="s2">&quot;GenSigTimeoutMsg&quot;</span> <span class="mi">0</span><span class="p">;</span>
+<span class="n">BA_DEF_DEF_</span>  <span class="s2">&quot;SystemSignalLongSymbol&quot;</span> <span class="s2">&quot;&quot;</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;DBName&quot;</span> <span class="s2">&quot;CAN1&quot;</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;NmMessage&quot;</span> <span class="n">BO_</span> <span class="mi">1036</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenMsgCycleTime&quot;</span> <span class="n">BO_</span> <span class="mi">1036</span> <span class="mi">100</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;NmMessage&quot;</span> <span class="n">BO_</span> <span class="mi">1050</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenMsgCycleTime&quot;</span> <span class="n">BO_</span> <span class="mi">1050</span> <span class="mi">100</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenMsgCycleTime&quot;</span> <span class="n">BO_</span> <span class="mi">1562</span> <span class="mi">1000</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;DiagState&quot;</span> <span class="n">BO_</span> <span class="mi">2003</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;DiagRequest&quot;</span> <span class="n">BO_</span> <span class="mi">2003</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenMsgSendType&quot;</span> <span class="n">BO_</span> <span class="mi">2003</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenSigSendType&quot;</span> <span class="n">SG_</span> <span class="mi">2003</span> <span class="n">TEST_EPB_DiagReq</span> <span class="mi">2</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;DiagState&quot;</span> <span class="n">BO_</span> <span class="mi">2011</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;DiagResponse&quot;</span> <span class="n">BO_</span> <span class="mi">2011</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenMsgSendType&quot;</span> <span class="n">BO_</span> <span class="mi">2011</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenSigSendType&quot;</span> <span class="n">SG_</span> <span class="mi">2011</span> <span class="n">EPB_DiagResp</span> <span class="mi">2</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;DiagState&quot;</span> <span class="n">BO_</span> <span class="mi">2015</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;DiagRequest&quot;</span> <span class="n">BO_</span> <span class="mi">2015</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenMsgSendType&quot;</span> <span class="n">BO_</span> <span class="mi">2015</span> <span class="mi">1</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenSigSendType&quot;</span> <span class="n">SG_</span> <span class="mi">2015</span> <span class="n">TEST_Func_DiagReq</span> <span class="mi">2</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenMsgCycleTime&quot;</span> <span class="n">BO_</span> <span class="mi">530</span> <span class="mi">50</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenMsgCycleTime&quot;</span> <span class="n">BO_</span> <span class="mi">784</span> <span class="mi">100</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenMsgCycleTime&quot;</span> <span class="n">BO_</span> <span class="mi">791</span> <span class="mi">100</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenMsgCycleTime&quot;</span> <span class="n">BO_</span> <span class="mi">796</span> <span class="mi">100</span><span class="p">;</span>
+<span class="n">BA_</span> <span class="s2">&quot;GenMsgCycleTime&quot;</span> <span class="n">BO_</span> <span class="mi">852</span> <span class="mi">100</span><span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">852</span> <span class="n">OBC_StartStatus</span> <span class="mi">1</span> <span class="s2">&quot;Start Charging&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Stop Charging&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">852</span> <span class="n">OBC_SystemFailure</span> <span class="mi">1</span> <span class="s2">&quot;Failure&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Nomal&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">852</span> <span class="n">OBC_AC_Input220VoltageSupply</span> <span class="mi">1</span> <span class="s2">&quot;Supply&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Not Supply&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">852</span> <span class="n">OBC_DC_OutputVoltage</span> <span class="mi">65535</span> <span class="s2">&quot;Invalid&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">852</span> <span class="n">OBC_DC_OutputCurrent</span> <span class="mi">255</span> <span class="s2">&quot;Invalid&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">852</span> <span class="n">OBC_Temperature</span> <span class="mi">255</span> <span class="s2">&quot;Invalid&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1050</span> <span class="n">OBC_SleepConditionsReady</span> <span class="mi">1</span> <span class="s2">&quot;Active&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Inactive&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1050</span> <span class="n">OBC_Stayawake_reasons1_InputVoltage</span> <span class="mi">1</span> <span class="s2">&quot;Active&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Inactive&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1050</span> <span class="n">OBC_Stayawake_reasons2_LowBatteryCharging</span> <span class="mi">1</span> <span class="s2">&quot;Active&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Inactive&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1050</span> <span class="n">OBC_BCUSleepConditionsNotReady</span> <span class="mi">1</span> <span class="s2">&quot;Active&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Inactive&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1562</span> <span class="n">OBC_OutputOvervoltageFault</span> <span class="mi">1</span> <span class="s2">&quot;Failure&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Nomal&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1562</span> <span class="n">OBC_OutputOvervoltageLowFault</span> <span class="mi">1</span> <span class="s2">&quot;Failure&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Nomal&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1562</span> <span class="n">OBC_OutputShortCircuitFault</span> <span class="mi">1</span> <span class="s2">&quot;Failure&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Nomal&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1562</span> <span class="n">OBC_TemperatureTooHighFault</span> <span class="mi">1</span> <span class="s2">&quot;Failure&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Nomal&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1562</span> <span class="n">OBC_LowTemperatureShutdownFault</span> <span class="mi">1</span> <span class="s2">&quot;Failure&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Nomal&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1562</span> <span class="n">OBC_AC_Input220VoltageFault</span> <span class="mi">1</span> <span class="s2">&quot;Failure&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Nomal&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1562</span> <span class="n">OBC_OutputOverCurrentProtection</span> <span class="mi">1</span> <span class="s2">&quot;Failure&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Nomal&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1562</span> <span class="n">OBC_LossCommunicationWithBCU</span> <span class="mi">1</span> <span class="s2">&quot;Failure&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Nomal&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1562</span> <span class="n">OBC_BusOff</span> <span class="mi">1</span> <span class="s2">&quot;Failure&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Nomal&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">784</span> <span class="n">VCU_VehicleOpratingMode</span> <span class="mi">3</span> <span class="s2">&quot;Reserved&quot;</span> <span class="mi">2</span> <span class="s2">&quot;On-Board Charging Mode&quot;</span> <span class="mi">1</span> <span class="s2">&quot;Driving Mode&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Stop Mode&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">784</span> <span class="n">VCU_LowBatteryChargingFunctionState</span> <span class="mi">3</span> <span class="s2">&quot;Invalid&quot;</span> <span class="mi">2</span> <span class="s2">&quot;Stop&quot;</span> <span class="mi">1</span> <span class="s2">&quot;Start&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Reserved&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">791</span> <span class="n">BCU_ChargeControlStatus</span> <span class="mi">1</span> <span class="s2">&quot;Request Charging&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Stop Charging&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">791</span> <span class="n">BCU_CurrentChargeState</span> <span class="mi">3</span> <span class="s2">&quot;Invalid&quot;</span> <span class="mi">2</span> <span class="s2">&quot;Finish&quot;</span> <span class="mi">1</span> <span class="s2">&quot;Charging&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Initial States&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">791</span> <span class="n">BCU_ChargingVoltageSet</span> <span class="mi">65535</span> <span class="s2">&quot;Invalid&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">791</span> <span class="n">BCU_ChargingCurrentSet</span> <span class="mi">255</span> <span class="s2">&quot;Invalid&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">796</span> <span class="n">BCU_OBCSleepConditionsReady</span> <span class="mi">1</span> <span class="s2">&quot;Active&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Inactive&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">530</span> <span class="n">BCM_PowerMode</span> <span class="mi">7</span> <span class="s2">&quot;Reserved&quot;</span> <span class="mi">6</span> <span class="s2">&quot;Reserved&quot;</span> <span class="mi">5</span> <span class="s2">&quot;Reserved&quot;</span> <span class="mi">4</span> <span class="s2">&quot;Reserved&quot;</span> <span class="mi">3</span> <span class="s2">&quot;Reserved&quot;</span> <span class="mi">2</span> <span class="s2">&quot;ON&quot;</span> <span class="mi">1</span> <span class="s2">&quot;ACC&quot;</span> <span class="mi">0</span> <span class="s2">&quot;OFF&quot;</span> <span class="p">;</span>
+<span class="n">VAL_</span> <span class="mi">1036</span> <span class="n">BCM_SleepCommand</span> <span class="mi">1</span> <span class="s2">&quot;Active&quot;</span> <span class="mi">0</span> <span class="s2">&quot;Inactive&quot;</span> <span class="p">;</span>
+</pre></div>
+</div>
+<p>既然是CAN仿真工具，第一篇就讲一下CAN DBC的格式，
+如何通过dbc文件定位到需要的信号。
+下面用到的所有定义都已经做过处理,不涉及任何商业使用的数据。</p>
+<p>各个CAN工具公司都有CANDBC的编辑与查看工具并且都很智能,
+比如Vector的CANOE跟 CAN Alyzer或者intrepidcs的工具都有dbc的工具。
+那么问题来了，为啥我们还要人工去看看怎么解析,
+因为我们要做的是自己的CAN工具，CAN dbc 的各种操作都需要自己去实现 ，
+所以这篇文章就是介绍如何用肉眼去解析CAN dbc，有了人工解析的能力，
+使用代码解析就手到擒来了。</p>
+<p>针对一个信号无非是以下几个内容:</p>
+<ol class="arabic simple">
+<li><p>信号所在的MessageID与名字，每个信号都依附于一个MeesageID；</p></li>
+<li><p>信号的名字，这个信号叫什么名字，有时候信号名字会有变化；</p></li>
+<li><p>信号的开始位置与长度，及时信号名变化，只要信号的位置与长度不变就不影响该信号的值；</p></li>
+<li><dl class="simple">
+<dt>信号的Factor与Offset，由于每个CAN message包含64bit的数据，</dt><dd><p>只能表示整型，但是汽车中有很多物理量是需要小数点及负数的 ，
+比如温度，-40度-+40度。因此需要引入factor和offset的概念，
+在计算物理值的时候需要用以下公式计算：
+raw_value*Factor+Offset=Py_value
+有时候我们需要计算某个物理值对应的rawvalue，
+简单的解方程就能得到raw_value.；</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>信号的值列表，有些信号为枚举类型，比如车辆的Ignition信号，会有启动，</dt><dd><p>OFF不同的状态，对应不同的raw value，包括物理值，
+也会有invalid，Error等特殊状态，在使用解析的时候都需要关注；</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>极大值，极小值,一般根据信号的字节长度，跟Factor和Offset就可以</dt><dd><p>计算出来，没什么实际作用；</p>
+</dd>
+</dl>
+</li>
+<li><p>信号的说明，描述说明信号是个什么东西，比如这个信号是车速之类的 ；</p></li>
+</ol>
+<p>下面介绍如何从DBC里面找到上面这些信息：</p>
+<div class="section" id="version">
+<h2>VERSION版本<a class="headerlink" href="#version" title="Permalink to this headline">¶</a></h2>
+<p>信息可以为空，也可以由用户自定定义；</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">VERSION</span> <span class="s2">&quot;&quot;</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="ns">
+<h2>NS新符号<a class="headerlink" href="#ns" title="Permalink to this headline">¶</a></h2>
+<p>New Symbol
+信息在我们创建dbc文件时就已经自动生成；
+所以这一部分的信息我们无需过多留意，一般默认即可。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">NS_</span><span class="p">:</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bs">
+<h2>BS波特率<a class="headerlink" href="#bs" title="Permalink to this headline">¶</a></h2>
+<p>格式如下：</p>
+<p><strong>BS_:[baudrate:BTR1,BTR2];</strong></p>
+<p>其中BS为关键字，用于定义CAN网络的波特率；
+[ ]内容表示为可选部分，可以省略（如下图例子中即把该部分省略了）；
+但关键字”BS:”必须存在，省略则会出错。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BS_</span><span class="p">:</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="bu">
+<h2>BU网络节点<a class="headerlink" href="#bu" title="Permalink to this headline">¶</a></h2>
+<p>格式如下：</p>
+<p><strong>BU_:Nodename1 Nodename2 Nodename3 ……</strong></p>
+<p>其中BU_为关键字，表示网络节点，格式中的Nodename1、
+Nodename2表示定义的网络节点名字，由用户自己定义；
+但需保证节点命名的唯一性。</p>
+<p>如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>BU_: AVNT ACU HUD ：表示定义了AVNT、ACU、HUD这三个网络节点。
+</pre></div>
+</div>
+<p>第一步，需要知道开头两个字符的定义</p>
+<table class="docutils align-default">
+<colgroup>
+<col style="width: 19%" />
+<col style="width: 81%" />
+</colgroup>
+<thead>
+<tr class="row-odd"><th class="head"><p>Keyword</p></th>
+<th class="head"><p>Object Type</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td><p>BU</p></td>
+<td><p>Network Node 网络节点</p></td>
+</tr>
+<tr class="row-odd"><td><p>BO</p></td>
+<td><p>Message 消息</p></td>
+</tr>
+<tr class="row-even"><td><p>SG</p></td>
+<td><p>Signal 信号</p></td>
+</tr>
+<tr class="row-odd"><td><p>EV</p></td>
+<td><p>Environment Varialbe 环境变量</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="bo">
+<h2>BO报文<a class="headerlink" href="#bo" title="Permalink to this headline">¶</a></h2>
+<p>第二步，找到Message，message都是以BO开头，
+格式如下，从这里我们可以得到上面所述的信息1：</p>
+<p><strong>message = BO_ message_id message_name ‘:’ message_size transmitter {signal};</strong></p>
+<p>例如：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>BO_ 112 BCM_Mesage1: 8 BCM
+
+“BO_ ” 起始字符串，代表这一行为定义一个Message
+“112”  为10进制的Message ID
+“BCM_Message1” 为Message的名字
+“：” 分割符
+“8” message 有多少个byte，一般为8个byte， 64 bit
+“BCM” 消息的发送者
+</pre></div>
+</div>
+</div>
+<div class="section" id="sg">
+<h2>SG 信号<a class="headerlink" href="#sg" title="Permalink to this headline">¶</a></h2>
+<p>第三步，找到signal， 格式如下，在这个里面我们可以找到大部分的信息：</p>
+<p><strong>signal = ‘SG_’ signal_name multiplexer_indicator ‘:’ start_bit ‘|’ signal_size ‘&#64;’ byte_order value_type ‘(‘factor’,’offset’)’ ‘{‘ minimum ‘|’ maximum ‘|’ unit receiver {‘,’ receiver};</strong></p>
+<p>例如：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>BO_ 100 BCM_Message1: 8 BCM     //这一行为Message
+SG_ Ignition_Status : 13|4@0+ (1,0) [0|0] &quot;SED&quot;  GW  //以下为依附于该Message的Signal
+SG_ Veh_V : 27|12@0+ (0.1,0) [0|409.5] &quot;0 to 409.5 kilometers per hour&quot;  ECM
+
+“SG_” 该行为信号
+“Ignition_Status” : 信号名为IgnitionStatus
+“：13” 冒号后面第一位是起始位置
+“|4” |后面的值，代表信号长度为4个bit
+“@0+”  0 代表 byte_order = &#39;0&#39; | &#39;1&#39; ; (* 0=little endian, 1=big endian *)， +号代表有无符号，value_type = &#39;+&#39; | &#39;-&#39; ; (* +=unsigned, -=signed *)
+“（1,0）” 小括号的值代表Factor和Offset，用于计算
+“[0|0]” 中括号的值代表最大值与最小值
+“SED” 代表单位，SED一般代表没有单位，因为这个值是一个枚举状态
+“GW” 最后的GW代表接受的节点
+</pre></div>
+</div>
+</div>
+<div class="section" id="val">
+<h2>VAL数值表<a class="headerlink" href="#val" title="Permalink to this headline">¶</a></h2>
+<p>第三步，找到信号的枚举状态，该行为一堆键值对，不同的值代表什么意思</p>
+<p><strong>value_descriptions_for_signal = ‘VAL_’ message_id signa_name { value_description } ‘;’;</strong></p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>VAL_ 100  Ignition_Status 15 &quot;Invalid&quot; 8 &quot;Start&quot; 4 &quot;Run&quot; 2 &quot;Off&quot; 0 &quot;Unknown&quot; ;
+“VAL_” 代表该行定义了一堆键值对，信号的值与内容
+“100” 与之前的MessageID一致， 代表信号所在的Message
+“Ignition_Status” 信号的名字
+“15 &#39;Invalid&#39;” 数值15代表invalid，其他都一样
+</pre></div>
+</div>
+</div>
+<div class="section" id="ba">
+<h2>BA 属性定义<a class="headerlink" href="#ba" title="Permalink to this headline">¶</a></h2>
+<p>BA开头定义了信号的属性，比如发送周期什么的</p>
+<dl>
+<dt>属性定义部分</dt><dd><p>格式如下：</p>
+<p><strong>BA_DEF_  Object  AttributeName  ValueType  Min  Max;</strong></p>
+<p><strong>BA_DEF_DEF_  AttributeName  DefaultValue;</strong></p>
+<ol class="arabic simple">
+<li><p>BA_DEF_为关键字，表示属性定义；</p></li>
+<li><p>Object表示属性定义的对象类型，可以是节点“BU”、报文“BO”、消息”SG”、网络节点” ”（用空格表示）等；</p></li>
+<li><p>AttributeName表示进行定义的属性名字；</p></li>
+<li><p>ValueType表示属性值的类型，可以是整型、字符串、浮点型、枚举类型等；</p></li>
+<li><p>Min/Max表示属性值的上下最值，即指定了取值范围（字符串类型没有此项）。</p></li>
+<li><p>BA_DEF_DEF_为关键字，表示定义属性的初始值；</p></li>
+<li><p>DefaultValue表示该属性的初始值。</p></li>
+</ol>
+<p>如</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>BA_DEF_ SG_  “MyTry” INT 0 11;
+BA_DEF_DEF_  “MyTry” 0;
+</pre></div>
+</div>
+<p>表示对定义了一个针对信号类型的属性，属性名为”MyTry”，属性值是整型数据，取值范围在0到11之间，初始值为0。</p>
+</dd>
+</dl>
+</div>
+<div class="section" id="cm">
+<h2>CM 注解<a class="headerlink" href="#cm" title="Permalink to this headline">¶</a></h2>
+<p>格式如下：
+<strong>CM_  Object  MessageId/NodeName  “Comment”</strong></p>
+<ol class="arabic simple">
+<li><p>CM_为关键字，表示注解信息；</p></li>
+<li><p>Object表示进行注解的对象类型，可以是节点“BU”、报文“BO”、消息”SG”；</p></li>
+<li><p>MessageId/NodeName 表示进行注解的对象，若前面的对象类型是信号或者报文，则这里的值应为报文的ID（10进制数表示）；若前面的对象类型为节点，则这里的值应为节点的名字；</p></li>
+<li><p>Comment表示进行注解的文本信息；</p></li>
+</ol>
+<p>如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>CM_ SG_ 996 HUD_HeightLv “Control hud height level”;
+表示对ID为996(0x3E4)这条报文下的名为”HUD_HeightLv ”的信号进行注解说明，说明的内容为&quot;Control hud height level&quot;。
+</pre></div>
+</div>
+<p>如:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>CM_ BU_ HUD “Head Up Display&quot;;表示对HUD这个节点进行注解说明，说明的内容为&quot; Head Up Display &quot;。
+</pre></div>
+</div>
+<p><strong>BA_ “GenMsgCycleTime” BO_ 100 60; 代表信号为100的发送周期为60ms</strong></p>
+<p><a class="reference external" href="https://blog.csdn.net/weixin_44536482/article/details/89030152">https://blog.csdn.net/weixin_44536482/article/details/89030152</a></p>
+</div>
+<div class="section" id="id1">
+<h2>参考<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<p>《DBC_File_Format_Documentation.pdf》</p>
+</div>
+<div class="section" id="python-bu">
+<h2>python 网络节点解析BU<a class="headerlink" href="#python-bu" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">BU_</span><span class="p">:</span> <span class="n">AC</span> <span class="n">BCM</span> <span class="n">BCU</span> <span class="n">DCM</span> <span class="n">EPB</span> <span class="n">EPS</span> <span class="n">HMI</span> <span class="n">MCU</span> <span class="n">OBC</span> <span class="n">TESTER</span> <span class="n">VCU</span>
+</pre></div>
+</div>
+<p>策略：</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>找出BU_:关键字所在行，以空格为分割提取出字符
+</pre></div>
+</div>
+</div>
+<div class="section" id="can-rx-c">
+<h2>can_rx.c<a class="headerlink" href="#can-rx-c" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;can_rx.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;can_comm.h&quot;</span><span class="cp"></span>
+
+<span class="k">static</span> <span class="kt">void</span> <span class="n">id318_rx_handle</span><span class="p">(</span><span class="n">u_unit_t</span> <span class="n">addr</span><span class="p">,</span> <span class="n">u_unit_t</span> <span class="n">len</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">u32_t</span> <span class="n">i</span><span class="p">;</span>
+
+    <span class="n">i</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+
+
+<span class="k">static</span> <span class="k">struct</span> <span class="nc">can_comm_msg_t</span> <span class="n">can_rx_msg</span><span class="p">[]</span> <span class="o">=</span>
+<span class="p">{</span>
+    <span class="n">CAN_FRAME_MSG</span><span class="p">(</span><span class="mh">0x318</span><span class="p">,</span> <span class="n">STANDARD_FRAME</span><span class="p">,</span> <span class="n">DATA_FRAME</span><span class="p">,</span> <span class="mi">8U</span><span class="p">,</span> <span class="n">T_NORMAL</span><span class="p">,</span> <span class="n">NORMAL_MODE</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">id318_rx_handle</span><span class="p">),</span> <span class="c1">//TEST_RX_MSG_IDX1</span>
+    <span class="n">CAN_FRAME_MSG</span><span class="p">(</span><span class="mh">0x3c0</span><span class="p">,</span> <span class="n">STANDARD_FRAME</span><span class="p">,</span> <span class="n">DATA_FRAME</span><span class="p">,</span> <span class="mi">8U</span><span class="p">,</span> <span class="n">T_NORMAL</span><span class="p">,</span> <span class="n">NORMAL_MODE</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">),</span> <span class="c1">//TEST_RX_MSG_IDX2</span>
+<span class="p">};</span>
+
+
+<span class="kt">void</span> <span class="nf">can_rx_init</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">can_rx_msg</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="nc">can_comm_t</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">can_comm_index_t</span> <span class="n">idx</span> <span class="o">=</span> <span class="n">can_comm_add</span><span class="p">(</span><span class="o">&amp;</span><span class="n">can_rx_msg</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">msg</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">idx</span> <span class="o">!=</span> <span class="n">CAN_COMM_INVALD_IDX</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">can_rx_msg</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">idx</span> <span class="o">=</span> <span class="n">idx</span><span class="p">;</span>
+                    <span class="n">can_set_filter</span><span class="p">(</span><span class="n">can_rx_msg</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">msg</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">id</span><span class="p">,</span> <span class="n">can_rx_msg</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">msg</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">rtr</span><span class="p">,</span> <span class="n">can_rx_msg</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">msg</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">ide</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+
+<span class="kt">void</span> <span class="nf">can_rx_get_test1</span><span class="p">(</span><span class="n">u8_t</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="n">u8_t</span> <span class="o">*</span><span class="n">len</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">can_comm_get_data</span><span class="p">(</span><span class="n">can_rx_msg</span><span class="p">[</span><span class="n">TEST_RX_MSG_IDX1</span><span class="p">].</span><span class="n">idx</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="can-rx-h">
+<h2>can_rx.h<a class="headerlink" href="#can-rx-h" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef __CAN_RX_H__</span>
+<span class="cp">#define __CAN_RX_H__</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;std_type.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#define TEST_RX_MSG_IDX1   0</span>
+<span class="cp">#define TEST_RX_MSG_IDX2   1</span>
+
+
+<span class="kt">void</span> <span class="nf">can_rx_init</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">can_rx_get_test1</span><span class="p">(</span><span class="n">u8_t</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="n">u8_t</span> <span class="o">*</span><span class="n">len</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">can_rx_get_test2</span><span class="p">(</span><span class="n">u8_t</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="n">u8_t</span> <span class="o">*</span><span class="n">len</span><span class="p">);</span>
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="can-tx-c">
+<h2>can_tx.c<a class="headerlink" href="#can-tx-c" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;can_tx.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;can_comm.h&quot;</span><span class="cp"></span>
+
+<span class="k">static</span> <span class="k">struct</span> <span class="nc">can_comm_msg_t</span> <span class="n">can_tx_msg</span><span class="p">[]</span> <span class="o">=</span>
+<span class="p">{</span>
+    <span class="n">CAN_FRAME_MSG</span><span class="p">(</span><span class="mh">0x33</span><span class="p">,</span> <span class="n">STANDARD_FRAME</span><span class="p">,</span> <span class="n">DATA_FRAME</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="n">T_NORMAL</span><span class="p">,</span> <span class="n">REVERSE_MODE</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">),</span> <span class="c1">//TEST_TX_MSG_IDX1</span>
+    <span class="n">CAN_FRAME_MSG</span><span class="p">(</span><span class="mh">0x34</span><span class="p">,</span> <span class="n">STANDARD_FRAME</span><span class="p">,</span> <span class="n">DATA_FRAME</span><span class="p">,</span> <span class="mi">8</span><span class="p">,</span> <span class="n">T_PERIOD</span><span class="p">,</span> <span class="n">NORMAL_MODE</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">40</span><span class="p">,</span> <span class="nb">NULL</span><span class="p">),</span> <span class="c1">//TEST_TX_MSG_IDX2</span>
+<span class="p">};</span>
+
+<span class="kt">void</span> <span class="nf">can_tx_init</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">can_tx_msg</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="nc">can_comm_t</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">can_comm_index_t</span> <span class="n">idx</span> <span class="o">=</span> <span class="n">can_comm_add</span><span class="p">(</span><span class="o">&amp;</span><span class="n">can_tx_msg</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">msg</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">idx</span> <span class="o">!=</span> <span class="n">CAN_COMM_INVALD_IDX</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">can_tx_msg</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">idx</span> <span class="o">=</span> <span class="n">idx</span><span class="p">;</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kt">void</span> <span class="nf">can_tx_set_test1</span><span class="p">(</span><span class="n">u8_t</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="n">u32_t</span> <span class="n">len</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">can_comm_set_data</span><span class="p">(</span><span class="n">can_tx_msg</span><span class="p">[</span><span class="n">TEST_TX_MSG_IDX1</span><span class="p">].</span><span class="n">idx</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+    <span class="n">can_comm_start_send</span><span class="p">(</span><span class="n">can_tx_msg</span><span class="p">[</span><span class="n">TEST_TX_MSG_IDX1</span><span class="p">].</span><span class="n">idx</span><span class="p">);</span>
+<span class="p">}</span>
+
+
+
+<span class="kt">void</span> <span class="nf">can_tx_set_test2</span><span class="p">(</span><span class="n">u8_t</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="n">u32_t</span> <span class="n">len</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="n">can_comm_set_data</span><span class="p">(</span><span class="n">can_tx_msg</span><span class="p">[</span><span class="n">TEST_TX_MSG_IDX2</span><span class="p">].</span><span class="n">idx</span><span class="p">,</span> <span class="n">data</span><span class="p">,</span> <span class="n">len</span><span class="p">);</span>
+    <span class="n">can_comm_start_send</span><span class="p">(</span><span class="n">can_tx_msg</span><span class="p">[</span><span class="n">TEST_TX_MSG_IDX2</span><span class="p">].</span><span class="n">idx</span><span class="p">);</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="can-tx-h">
+<h2>can_tx.h<a class="headerlink" href="#can-tx-h" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#ifndef __CAN_TX_H__</span>
+<span class="cp">#define __CAN_TX_H__</span>
+
+<span class="cp">#include</span> <span class="cpf">&quot;std_type.h&quot;</span><span class="cp"></span>
+
+<span class="cp">#define TEST_TX_MSG_IDX1   0</span>
+<span class="cp">#define TEST_TX_MSG_IDX2   1</span>
+
+<span class="kt">void</span> <span class="nf">can_tx_init</span><span class="p">(</span><span class="kt">void</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">can_tx_set_test1</span><span class="p">(</span><span class="n">u8_t</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="n">u32_t</span> <span class="n">len</span><span class="p">);</span>
+<span class="kt">void</span> <span class="nf">can_tx_set_test2</span><span class="p">(</span><span class="n">u8_t</span> <span class="o">*</span><span class="n">data</span><span class="p">,</span> <span class="n">u32_t</span> <span class="n">len</span><span class="p">);</span>
+
+<span class="cp">#endif</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h2>策略<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p>打开DBC</p>
+<p>解析出文件中所有的
+Network Node
+Message</p>
+</div>
+<div class="section" id="id3">
+<h2>帧配置<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Message ID</p></li>
+<li><dl class="simple">
+<dt>帧类型</dt><dd><ul>
+<li><p>DATA_FRAME</p></li>
+<li><p>REMOTE_FRAME</p></li>
+<li><p><a class="reference external" href="https://blog.csdn.net/weixin_37787043/article/details/80906905">https://blog.csdn.net/weixin_37787043/article/details/80906905</a></p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>帧格式</dt><dd><ul>
+<li><p>EXTEND_FRAME</p></li>
+<li><p>STANDARD_FRAME</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>CAN类型</dt><dd><ul>
+<li><p>T_NORMAL</p></li>
+<li><p>T_PHY_DIAG_REQ</p></li>
+<li><p>T_FUNC_DIAG_REQ</p></li>
+<li><p>T_DIAG_RESP</p></li>
+<li><p>T_NM</p></li>
+<li><p>T_PERIOD</p></li>
+<li><p>T_MI</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt>发送报文模式</dt><dd><ul>
+<li><p>NORMAL_MODE</p></li>
+<li><p>REVERSE_MODE</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p>发送次数</p></li>
+<li><p>发送周期</p></li>
+</ul>
+</div>
+<div class="section" id="id4">
+<h2>can_rx.c策略<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p><strong>rxdata1.c</strong></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="cp">#include</span> <span class="cpf">&quot;can_rx.h&quot;</span><span class="cp"></span>
+<span class="cp">#include</span> <span class="cpf">&quot;can_comm.h&quot;</span><span class="cp"></span>
+</pre></div>
+</div>
+<p><strong>ui处理</strong></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="kt">void</span> <span class="n">id318_rx_handle</span><span class="p">(</span><span class="n">u_unit_t</span> <span class="n">addr</span><span class="p">,</span> <span class="n">u_unit_t</span> <span class="n">len</span><span class="p">)</span>
+</pre></div>
+</div>
+<p><strong>rxdata2.c</strong></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">{</span>
+<span class="n">u32_t</span> <span class="n">i</span><span class="p">;</span>
+
+<span class="n">i</span><span class="o">++</span><span class="p">;</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+<p><strong>rxdata3.c</strong></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="k">static</span> <span class="k">struct</span> <span class="nc">can_comm_msg_t</span> <span class="n">can_rx_msg</span><span class="p">[]</span> <span class="o">=</span>
+<span class="p">{</span>
+</pre></div>
+</div>
+<p><strong>ui处理</strong></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="n">CAN_FRAME_MSG</span><span class="p">(</span><span class="mh">0x318</span><span class="p">,</span> <span class="n">STANDARD_FRAME</span><span class="p">,</span> <span class="n">DATA_FRAME</span><span class="p">,</span> <span class="mi">8U</span><span class="p">,</span> <span class="n">T_NORMAL</span><span class="p">,</span> <span class="n">NORMAL_MODE</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">id318_rx_handle</span><span class="p">),</span> <span class="c1">//TEST_RX_MSG_IDX1</span>
+</pre></div>
+</div>
+<p><strong>rxdata4.c</strong></p>
+<div class="highlight-c notranslate"><div class="highlight"><pre><span></span><span class="p">};</span>
+
+
+<span class="kt">void</span> <span class="nf">can_rx_init</span><span class="p">(</span><span class="kt">void</span><span class="p">)</span>
+<span class="p">{</span>
+    <span class="kt">int</span> <span class="n">i</span><span class="p">;</span>
+
+    <span class="k">for</span> <span class="p">(</span><span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="k">sizeof</span><span class="p">(</span><span class="n">can_rx_msg</span><span class="p">)</span> <span class="o">/</span> <span class="k">sizeof</span><span class="p">(</span><span class="k">struct</span> <span class="nc">can_comm_t</span><span class="p">);</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span>
+    <span class="p">{</span>
+        <span class="n">can_comm_index_t</span> <span class="n">idx</span> <span class="o">=</span> <span class="n">can_comm_add</span><span class="p">(</span><span class="o">&amp;</span><span class="n">can_rx_msg</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">msg</span><span class="p">);</span>
+        <span class="k">if</span> <span class="p">(</span><span class="n">idx</span> <span class="o">!=</span> <span class="n">CAN_COMM_INVALD_IDX</span><span class="p">)</span>
+        <span class="p">{</span>
+            <span class="n">can_rx_msg</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">idx</span> <span class="o">=</span> <span class="n">idx</span><span class="p">;</span>
+                    <span class="n">can_set_filter</span><span class="p">(</span><span class="n">can_rx_msg</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">msg</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">id</span><span class="p">,</span> <span class="n">can_rx_msg</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">msg</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">rtr</span><span class="p">,</span> <span class="n">can_rx_msg</span><span class="p">[</span><span class="n">i</span><span class="p">].</span><span class="n">msg</span><span class="p">.</span><span class="n">frame</span><span class="p">.</span><span class="n">ide</span><span class="p">);</span>
+        <span class="p">}</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+</div>
+</div>
+</div>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../index.html">dbc</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<p class="caption"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">dbc</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#version">VERSION版本</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ns">NS新符号</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bs">BS波特率</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bu">BU网络节点</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bo">BO报文</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#sg">SG 信号</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#val">VAL数值表</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ba">BA 属性定义</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cm">CM 注解</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">参考</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#python-bu">python 网络节点解析BU</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#can-rx-c">can_rx.c</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#can-rx-h">can_rx.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#can-tx-c">can_tx.c</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#can-tx-h">can_tx.h</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">策略</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">帧配置</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">can_rx.c策略</a></li>
+</ul>
+</li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../index.html">Documentation overview</a><ul>
+      <li>Previous: <a href="../index.html" title="previous chapter">Welcome to dbc’s documentation!</a></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2021, bona.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 3.5.2</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../_sources/usage/dbc.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

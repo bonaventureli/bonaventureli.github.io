@@ -1,0 +1,11 @@
+CYW20719
+==============
+
+
+参考: api文档 CYW20719-API_
+
+数据手册 `CYW20719 datasheet`_
+
+.. _CYW20719-API: https://cypresssemiconductorco.github.io/btsdk-docs/BT-SDK/20719-B2_Bluetooth/API/index.html
+
+.. _CYW20719 datasheet: https://www.cypress.com/file/469126/download

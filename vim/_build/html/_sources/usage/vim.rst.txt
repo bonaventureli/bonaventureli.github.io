@@ -1,0 +1,15 @@
+编程常用指令
+================
+
+vim replace cmd:
+
+:.,$s/aaa/bbb/gc
+
+vimplus 删除整个函数
+daf
+
+merge develop分支的指定文件替换当前分支指定文件
+
+git checkout develop app/component/component.c
+
+
