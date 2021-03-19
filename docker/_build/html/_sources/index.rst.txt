@@ -10,6 +10,8 @@ Welcome to docker's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   usage/docker.rst
+
 
 
 Indices and tables
