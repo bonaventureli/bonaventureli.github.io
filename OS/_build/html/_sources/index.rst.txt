@@ -10,6 +10,10 @@ Welcome to Operating system's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   usage/freertos.rst
+   usage/ucos.rst
+   usage/linux.rst
+
 
 
 Indices and tables
