@@ -2,6 +2,21 @@ CYW20719
 ==============
 
 
+wiced_btsdk
+----------------------
+
+.. code-block:: c
+
+    
+
+ModusToolbox指南
+---------------------
+
+https://www.cypress.com/file/512716/download
+
+https://www.cypress.com/products/modustoolbox
+
+
 参考: api文档 CYW20719-API_
 
 数据手册 `CYW20719 datasheet`_

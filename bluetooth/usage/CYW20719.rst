@@ -9,6 +9,13 @@ wiced_btsdk
 
     
 
+ModusToolbox指南
+---------------------
+
+https://www.cypress.com/file/512716/download
+
+https://www.cypress.com/products/modustoolbox
+
 
 参考: api文档 CYW20719-API_
 
