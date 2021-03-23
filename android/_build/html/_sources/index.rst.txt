@@ -10,6 +10,8 @@ Welcome to android's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   usage/android.rst
+
 
 
 Indices and tables

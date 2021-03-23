@@ -10,6 +10,8 @@ Welcome to ios's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   usage/ios.rst
+
 
 
 Indices and tables

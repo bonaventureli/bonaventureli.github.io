@@ -11,6 +11,7 @@ Welcome to aliyun's documentation!
    :caption: Contents:
 
    usage/aliyun.rst
+   usage/alipaymini.rst
 
 
 
