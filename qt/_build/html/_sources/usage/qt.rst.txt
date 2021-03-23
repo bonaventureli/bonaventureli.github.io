@@ -36,3 +36,6 @@ python中看到的slot1
 ------------------------------
 
 .. image:: ./qt/slot4.png
+
+https://www.qt.io/
+

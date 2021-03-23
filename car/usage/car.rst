@@ -40,3 +40,18 @@ https://www.neusoft.com/cn/
 大众
 
 
+ACC 更低的电源,弱电，听广播
+
+ON 发动机启停
+
+OFF 
+
+刹车
+
+空调
+
+START
+
+
+
+
