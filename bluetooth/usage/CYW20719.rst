@@ -37,6 +37,10 @@ WICED HCI Firmware Download
 
 https://cypresssemiconductorco.github.io/btsdk-docs/BT-SDK/WICED-HCI-Firmware-Download.pdf
 
+Managing the Makefile for ModusToolbox
+
+https://community.cypress.com/t5/Knowledge-Base-Articles/Managing-the-Makefile-for-ModusToolbox-v2-x-KBA229177/ta-p/250624
+
 
 参考: api文档 CYW20719-API_
 

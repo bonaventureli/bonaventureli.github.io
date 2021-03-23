@@ -13,6 +13,7 @@ Welcome to bluetooth's documentation!
    usage/nrf52832.rst
    usage/CYW20719.rst
    usage/bluez.rst
+   usage/bluetooth.rst
 
 
 Indices and tables
