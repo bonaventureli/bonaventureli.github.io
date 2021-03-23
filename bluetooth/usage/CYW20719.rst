@@ -24,6 +24,18 @@ ModusToolbox Project Creator Guide
 https://www.cypress.com/file/512726/download
 
 
+https://cypresssemiconductorco.github.io/btsdk-docs/BT-SDK/index.html
+
+https://community.cypress.com/t5/Resource-Library/CYW20719B2-Product-Guide/ta-p/251238
+
+ota
+
+https://cypresssemiconductorco.github.io/btsdk-docs/BT-SDK/WICED-Secure-Over-the-Air-Firmware-Upgrade.pdf
+
+
+WICED HCI Firmware Download
+
+https://cypresssemiconductorco.github.io/btsdk-docs/BT-SDK/WICED-HCI-Firmware-Download.pdf
 
 
 参考: api文档 CYW20719-API_
