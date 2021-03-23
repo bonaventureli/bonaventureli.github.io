@@ -14,7 +14,7 @@ ModusToolbox指南
 
 `ModusToolbox User Guide`_
 
-https://www.cypress.com/file/512716/download
+_`ModusToolbox User Guide`: https://www.cypress.com/file/512716/download
 
 https://www.cypress.com/products/modustoolbox
 
