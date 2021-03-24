@@ -42,6 +42,53 @@ Managing the Makefile for ModusToolbox
 https://community.cypress.com/t5/Knowledge-Base-Articles/Managing-the-Makefile-for-ModusToolbox-v2-x-KBA229177/ta-p/250624
 
 
+
+
+
+
+
+hello_sensor
+
+.. code-block:: c
+   
+    Hello Sensor Start
+    BTM_LOCAL_IDENTITY_KEYS_REQUEST_EVT=0x15
+    hello_sensor_management_cback: 15
+
+
+
+.. list-table::
+
+    * - Enumerator
+      - xx
+    * - BTM_LOCAL_IDENTITY_KEYS_REQUEST_EVT
+      - Request local identity key (get local_identity_keys from NV memory).If successful, return WICED_BT_SUCCESS. Event data: wiced_bt_local_identity_keys_t
+
+
+
+BTM_LOCAL_IDENTITY_KEYS_REQUEST_EVT 
+    Request local identity key (get local_identity_keys from NV memory).
+    If successful, return WICED_BT_SUCCESS. Event data: wiced_bt_local_identity_keys_t
+
+https://cypresssemiconductorco.github.io/btsdk-docs/BT-SDK/20719-B2_Bluetooth/API/wiced__bt__dev_8h.html#a4a427fc37161f2041016d7936399be65
+local keys read from NVRAM result: 0 
+
+identity   
+英 [aɪˈdentəti]   美 [aɪˈdentəti]  
+n.  身份; [逻]同一性; 个性; [数]恒等（式）;
+
+
+
+
+
+
+
+
+
+
+
+
+
 参考: api文档 CYW20719-API_
 
 数据手册 `CYW20719 datasheet`_

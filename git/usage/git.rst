@@ -16,3 +16,25 @@ git log --stat
     git config user.name "abc"
     git config user.email "d@qq.com"
 
+提交了不想提交的测试代码或commit写错
+
+git reset (想回退的位置)
+
+git reset fc423ded67a726cc6886926c23d43ff861914fbf
+
+git checkout .
+
+git pull
+
+merge 本地和云端分支，然后提交
+
+
+或 git revert fc423ded67a726cc6886926c23d43ff861914fbf
+
+https://www.jianshu.com/p/5c562c0790fd
+
+撤销操作
+
+https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C
+
+
