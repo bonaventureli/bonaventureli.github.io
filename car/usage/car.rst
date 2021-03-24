@@ -57,7 +57,26 @@ START
 http://moni.51hupai.org/
 
 
+测试浏览器兼容性
+
+https://test.alltobid.com/
 
 
 
 
+上海国际商品拍卖有限公司
+
+https://www.alltobid.com/
+
+
+上海市非营业性客车额度拍卖
+
+http://chepai.alltobid.com/
+
+
+拍照网
+
+https://paimai.alltobid.com/legacy/infopub.html
+
+
+https://paimai.alltobid.com

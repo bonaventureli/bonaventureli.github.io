@@ -64,12 +64,6 @@ hello_sensor
     * - BTM_LOCAL_IDENTITY_KEYS_REQUEST_EVT
       - Request local identity key (get local_identity_keys from NV memory).If successful, return WICED_BT_SUCCESS. Event data: wiced_bt_local_identity_keys_t
 
-
-
-BTM_LOCAL_IDENTITY_KEYS_REQUEST_EVT 
-    Request local identity key (get local_identity_keys from NV memory).
-    If successful, return WICED_BT_SUCCESS. Event data: wiced_bt_local_identity_keys_t
-
 https://cypresssemiconductorco.github.io/btsdk-docs/BT-SDK/20719-B2_Bluetooth/API/wiced__bt__dev_8h.html#a4a427fc37161f2041016d7936399be65
 local keys read from NVRAM result: 0 
 
