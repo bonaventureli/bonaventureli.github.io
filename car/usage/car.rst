@@ -80,3 +80,8 @@ https://paimai.alltobid.com/legacy/infopub.html
 
 
 https://paimai.alltobid.com
+
+
+电信还是非电信测试
+
+https://www.speedtest.cn/
