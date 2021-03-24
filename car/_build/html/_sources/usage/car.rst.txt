@@ -1,16 +1,15 @@
 Car
 ==========
 
-海拉
+`海拉`_
 
-https://www.hella.com
-
-https://www.hella.com/hella-cn/zh/%E6%B5%B7%E6%8B%89%E5%9C%A8%E4%B8%AD%E5%9B%BD-1420.html
+.. _`海拉`: https://www.hella.com
 
 
-东软
 
-https://www.neusoft.com/cn/
+`东软`_
+
+.. _`东软`: https://www.neusoft.com/cn/
 
 
 奇瑞
