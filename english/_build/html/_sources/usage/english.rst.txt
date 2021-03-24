@@ -1,6 +1,10 @@
 English
 =============
 
+CGTV_
+
+.. _CGTV: https://www.cgtn.com/tv
+
 .. list-table::
 
     * - word 
