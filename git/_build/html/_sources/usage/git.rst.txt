@@ -28,7 +28,28 @@ git pull
 
 merge 本地和云端分支，然后提交
 
+ssh-keygen
+---------------------   -
+
+git config --global user.name "xb12369"
+
+git config --global user.email "1234@qq.com"
+
+ssh-keygen -t rsa -C "1234@qq.com"
+
 
 或 git revert fc423ded67a726cc6886926c23d43ff861914fbf
+
 https://www.jianshu.com/p/5c562c0790fd
+
+撤销操作
+
+https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C
+
+
+Signing up for a new GitHub account
+---------------------------------------------
+
+https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account
+
 
