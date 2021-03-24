@@ -52,7 +52,6 @@ hello_sensor
 .. code-block:: c
    
     Hello Sensor Start
-    BTM_LOCAL_IDENTITY_KEYS_REQUEST_EVT=0x15
     hello_sensor_management_cback: 15
     hello_sensor_management_cback: 17
     Advertisement State Change: 3
