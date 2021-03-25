@@ -42,6 +42,9 @@ Managing the Makefile for ModusToolbox
 https://community.cypress.com/t5/Knowledge-Base-Articles/Managing-the-Makefile-for-ModusToolbox-v2-x-KBA229177/ta-p/250624
 
 
+https://www.cypress.com/solutions/internet-things-iot
+
+https://community.cypress.com/
 
 
 

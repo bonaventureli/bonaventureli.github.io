@@ -1,6 +1,9 @@
 bluetooth
 ======================
 
+https://www.bluetooth.com/specifications/specs/
+
+
 `蓝牙联盟`_
 .. _`蓝牙联盟`: https://www.bluetooth.com/
 

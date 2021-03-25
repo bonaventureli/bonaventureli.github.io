@@ -67,9 +67,24 @@ CGTV_
       - 英[ˌænə'teɪʃn]美[ˌænə'teɪʃn]
       - n.注释
       - https://www.iciba.com/word?w=annotation
+    * - predict
+      - 英[prɪˈdɪkt]美[prɪˈdɪkt]
+      - v.预言; 预测
+      - https://www.iciba.com/word?w=predict
+    * - monolithic
+      - 英[ˌmɒnə'lɪθɪk]美[ˌmɑnəˈlɪθɪk]
+      - adj.独块巨石的; 整体的; 庞大的
+      - https://www.iciba.com/word?w=monolithic
+    * - vulnerability
+      - 英[ˌvʌlnərə'bɪlətɪ]美[ˌvʌlnərə'bɪləti]
+      - n.弱点，攻击; 易伤性; 致命性; 脆弱性
+      - https://www.iciba.com/word?w=vulnerability
 
 
 
 
 
+predict
+monolithic
+vulnerability
 
