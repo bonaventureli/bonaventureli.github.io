@@ -14,14 +14,14 @@ ModusToolbox指南
 
 `ModusToolbox User Guide`_
 
-_`ModusToolbox User Guide`: https://www.cypress.com/file/512716/download
+.. _`ModusToolbox User Guide`: https://www.cypress.com/file/512716/download
 
 https://www.cypress.com/products/modustoolbox
 
 
-ModusToolbox Project Creator Guide
+`ModusToolbox Project Creator Guide`_
 
-https://www.cypress.com/file/512726/download
+.. _`ModusToolbox Project Creator Guide`: https://www.cypress.com/file/512726/download
 
 
 https://cypresssemiconductorco.github.io/btsdk-docs/BT-SDK/index.html
