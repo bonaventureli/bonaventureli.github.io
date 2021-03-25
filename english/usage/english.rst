@@ -79,12 +79,13 @@ CGTV_
       - 英[ˌvʌlnərə'bɪlətɪ]美[ˌvʌlnərə'bɪləti]
       - n.弱点，攻击; 易伤性; 致命性; 脆弱性
       - https://www.iciba.com/word?w=vulnerability
+    * - identity
+      - 英[aɪˈdentəti]美[aɪˈdentəti]
+      - n.身份; 个性; 一致
+      - https://www.iciba.com/word?w=identity
 
 
 
 
 
-predict
-monolithic
-vulnerability
 

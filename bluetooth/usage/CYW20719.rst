@@ -32,6 +32,9 @@ ota
 
 https://cypresssemiconductorco.github.io/btsdk-docs/BT-SDK/WICED-Secure-Over-the-Air-Firmware-Upgrade.pdf
 
+ota git地址
+
+https://github.com/cypresssemiconductorco/mtb-examples-CYW920719B2Q40EVB-01-btsdk-ota
 
 WICED HCI Firmware Download
 
@@ -177,9 +180,6 @@ disconnect reason
 
 
 
-identity   
-英 [aɪˈdentəti]   美 [aɪˈdentəti]  
-n.  身份; [逻]同一性; 个性; [数]恒等（式）;
 
 
 

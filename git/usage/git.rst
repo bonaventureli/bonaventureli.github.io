@@ -52,4 +52,9 @@ Signing up for a new GitHub account
 
 https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account
 
+git 查看远程仓库地址
+----------------------------
+
+git remote -v
+
 
