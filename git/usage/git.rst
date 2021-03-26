@@ -57,4 +57,6 @@ git 查看远程仓库地址
 
 git remote -v
 
+git 删除tag
 
+git tag -d 

@@ -10,12 +10,8 @@ Welcome to 4G's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-l610
-==========
+   usage/4g.rst
 
-参考4G模组 l610模组_
-
-.. _l610模组: https://www.fibocom.com/products/info_itemid_933.html
 
 
 Indices and tables

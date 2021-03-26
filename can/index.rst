@@ -10,6 +10,8 @@ Welcome to CAN's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   usage/can.rst
+
 
 
 Indices and tables
