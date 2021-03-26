@@ -11,6 +11,7 @@ Welcome to Adobe's documentation!
    :caption: Contents:
 
    usage/photoshop.rst
+   usage/pdf.rst
 
 
 
