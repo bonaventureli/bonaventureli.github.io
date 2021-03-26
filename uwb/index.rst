@@ -10,6 +10,8 @@ Welcome to UWB's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   usage/uwb.rst
+
 
 
 Indices and tables
