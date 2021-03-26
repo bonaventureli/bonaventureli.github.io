@@ -10,6 +10,8 @@ Welcome to GNSS's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   usage/gnss.rst
+
 
 
 Indices and tables
