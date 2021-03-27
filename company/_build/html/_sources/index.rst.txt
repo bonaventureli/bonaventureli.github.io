@@ -11,6 +11,8 @@ Welcome to Company's documentation!
    :caption: Contents:
 
    usage/company.rst
+   usage/ximalaya.rst
+   usage/bilibili.rst
 
 
 
