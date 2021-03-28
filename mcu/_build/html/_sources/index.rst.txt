@@ -13,6 +13,7 @@ Welcome to Microcontroller Unit's documentation!
    usage/mcu.rst
    usage/KW36A512.rst
    usage/rh850.rst
+   usage/nrf52832.rst
 
 
 

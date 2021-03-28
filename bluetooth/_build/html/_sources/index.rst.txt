@@ -10,8 +10,6 @@ Welcome to bluetooth's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   usage/nrf52832.rst
-   usage/CYW20719.rst
    usage/bluez.rst
    usage/bluetooth.rst
 
