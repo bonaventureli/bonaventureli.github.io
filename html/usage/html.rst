@@ -16,3 +16,6 @@ https://www.runoob.com/try/try.php?filename=trycss_table_fancy
 
 .. _`网页简史`: https://www.bilibili.com/video/BV1XJ411X7Ud?p=2&spm_id_from=pageDriver
 
+W3C_
+
+.. _W3C: https://www.w3.org/
