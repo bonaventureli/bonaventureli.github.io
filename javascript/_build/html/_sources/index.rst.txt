@@ -10,6 +10,8 @@ Welcome to javascript's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   usage/javascript.rst
+
 
 
 Indices and tables
