@@ -1,20 +1,3 @@
 4G
 =========
 
-sch_
-
-.. _sch: https://hec9sr20xg.feishu.cn/file/boxcnmXORXEn3EyinB6DHlTq8Cb
-
-`编程应用`_
-
-.. _`编程应用`: https://hec9sr20xg.feishu.cn/file/boxcnXiUbf10pinqHvaAFvo0KGd
-
-api_
-
-.. _api: https://hec9sr20xg.feishu.cn/file/boxcnks19GmQduLhinhWGTOtC7d
-
-
-
-`l610模组`_
-
-.. _`l610模组`: https://www.fibocom.com/products/info_itemid_933.html
