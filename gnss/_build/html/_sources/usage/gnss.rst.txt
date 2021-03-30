@@ -1,6 +1,14 @@
 GNSS
 ==========
 
+
+https://developer.android.google.cn/guide/topics/sensors/gnss
+
+https://www.ion.org/publications/abstract.cfm?articleID=15113
+
+https://galileognss.eu/gnss-raw-measurements-delivering-greater-accuracy/
+
+
 tau1103_
 
 .. _tau1103: https://hec9sr20xg.feishu.cn/file/boxcnyvIA1QyXNaXfZ0AbGNn5Kb
