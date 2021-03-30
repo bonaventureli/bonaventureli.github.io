@@ -13,6 +13,11 @@ https://pages.github.com/
 https://github.com/notepad-plus-plus/notepad-plus-plus
 
 
+python uart
+
+https://github.com/ColinFred/Pyserial-Demo
+
+
 
 `Configuring a custom domain for your GitHub Pages site`_
 
