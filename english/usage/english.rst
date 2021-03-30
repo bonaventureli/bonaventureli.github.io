@@ -5,6 +5,11 @@ CGTV_
 
 .. _CGTV: https://www.cgtn.com/tv
 
+`英国金融时报（Financial Times）`_
+
+.. _`英国金融时报（Financial Times）`: https://www.ft.com/
+
+
 .. list-table::
 
     * - word 

@@ -19,3 +19,17 @@ https://www.runoob.com/try/try.php?filename=trycss_table_fancy
 W3C_
 
 .. _W3C: https://www.w3.org/
+
+文本编辑器 atom
+
+https://atom.io/
+
+https://liquid.bootcss.com/
+
+https://xueqiu.com/u/2193837505
+
+https://www.quectel.com/?lang=zh-hans
+
+
+https://lilichao.com/
+

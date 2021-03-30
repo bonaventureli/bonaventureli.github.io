@@ -13,6 +13,7 @@ Welcome to Operating system's documentation!
    usage/freertos.rst
    usage/ucos.rst
    usage/linux.rst
+   usage/cmsis.rst
 
 
 

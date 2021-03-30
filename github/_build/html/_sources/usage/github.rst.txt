@@ -27,6 +27,14 @@ https://github.com/spark3dp/ember-firmware
 
 https://github.com/python-intelhex/intelhex
 
+AI换脸
+
+https://github.com/alievk/avatarify-python
+
+https://github.com/alievk/avatarify
+
+https://www.ft.com/content/841fb089-1e7f-45fd-a3d4-bc36f13ec1a5
+
 
 `Configuring a custom domain for your GitHub Pages site`_
 
