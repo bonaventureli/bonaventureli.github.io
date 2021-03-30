@@ -179,6 +179,10 @@ disconnect reason
     typedef uint16_t wiced_bt_gatt_disconn_reason_t;    /**< GATT disconnection reason (see #wiced_bt_gatt_disconn_reason_e) */
 
 
+`快捷指令`_
+
+.. _`快捷指令`: https://hec9sr20xg.feishu.cn/docs/doccnf1luS7tKSOarmw3ts6fzme
+
 
 
 
