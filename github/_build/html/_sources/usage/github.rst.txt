@@ -19,6 +19,15 @@ https://github.com/ColinFred/Pyserial-Demo
 
 
 
+https://github.com/NordicSemiconductor/Android-nRF-Toolbox
+
+https://github.com/Awesome-HarmonyOS/HarmonyOS
+
+https://github.com/spark3dp/ember-firmware
+
+https://github.com/python-intelhex/intelhex
+
+
 `Configuring a custom domain for your GitHub Pages site`_
 
 .. _`Configuring a custom domain for your GitHub Pages site`: https://docs.github.com/en/github/working-with-github-pages/configuring-a-custom-domain-for-your-github-pages-site

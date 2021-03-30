@@ -178,12 +178,23 @@ disconnect reason
     };
     typedef uint16_t wiced_bt_gatt_disconn_reason_t;    /**< GATT disconnection reason (see #wiced_bt_gatt_disconn_reason_e) */
 
+`Programming using ChipLoad.exe`_
+
+.. _`Programming using ChipLoad.exe`: https://community.cypress.com/t5/Resource-Library/Programming-using-ChipLoad-exe/ta-p/246392
+
 
 `快捷指令`_
 
 .. _`快捷指令`: https://hec9sr20xg.feishu.cn/docs/doccnf1luS7tKSOarmw3ts6fzme
 
 
+`脚本烧录hex`_
+
+.. _`脚本烧录hex`: https://hec9sr20xg.feishu.cn/drive/folder/fldcnTKZOn6iWPGnxgePdrv0nLg
+
+`硬件环境`_
+
+.. _`硬件环境`: https://hec9sr20xg.feishu.cn/file/boxcnUZDrRWiRRFooZntckVvZFg
 
 
 
@@ -191,9 +202,7 @@ disconnect reason
 
 
 
-
-
-
+https://github.com/NordicSemiconductor/Android-nRF-Toolbox
 
 
 
