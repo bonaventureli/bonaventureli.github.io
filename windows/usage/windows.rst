@@ -27,3 +27,7 @@ windows搭建web
 
 https://zhuanlan.zhihu.com/p/29719244
 
+
+`Windows 编译4G`_
+
+.. _`Windows 编译4G`: https://hec9sr20xg.feishu.cn/docs/doccn7W2OmdR4axjY391DkPjDVd
