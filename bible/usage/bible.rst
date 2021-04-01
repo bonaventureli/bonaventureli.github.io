@@ -19,6 +19,12 @@ Bible
 
 `出谷纪第三十八章`_
 
+`出谷纪第三十九章`_
+
+`出谷纪第四十章`_
+
+`肋未纪第一章`_
+
 .. _`出谷纪第三十章`: https://www.xiaozhushou.org/index.php?m=bible&version=sigao&template=2&chapter=30
 
 .. _`出谷纪第三十一章`: https://www.xiaozhushou.org/index.php?m=bible&version=sigao&template=2&chapter=31
@@ -37,4 +43,9 @@ Bible
 
 .. _`出谷纪第三十八章`: https://www.xiaozhushou.org/index.php?m=bible&version=sigao&template=2&chapter=38
 
+.. _`出谷纪第三十九章`: https://www.xiaozhushou.org/index.php?m=bible&version=sigao&template=2&chapter=39
+
+.. _`出谷纪第四十章`: https://www.xiaozhushou.org/index.php?m=bible&version=sigao&template=2&chapter=40
+
+.. _`肋未纪第一章`: https://www.xiaozhushou.org/index.php?m=bible&version=sigao&template=3&chapter=1
 
