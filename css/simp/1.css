@@ -24,11 +24,11 @@ span{
 }
 .az{
 	/* width: 800px; */
-	/* height: 20px; */
-	background-color:darkgray;
+	height: 20px;
+	background-color:tomato;
 
 	border: 10px;
-	/* padding-bottom: 20px; */
+	padding-bottom: 30px;
 	margin-top:50px;
 }
 
