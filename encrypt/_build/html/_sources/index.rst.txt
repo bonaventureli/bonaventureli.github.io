@@ -14,6 +14,7 @@ Welcome to encrypt's documentation!
    usage/openssl.rst
    usage/wolfssl.rst
    usage/ietf.rst
+   usage/ecc.rst
 
 
 
