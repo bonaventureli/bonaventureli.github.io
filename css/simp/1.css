@@ -8,12 +8,28 @@ li{
 	font-weight: 100;
 	color: burlywood;
 }
+span{
+	/* background-color:chocolate; */
+	font-family: 'Courier New', Courier, monospace;
+}
+
 #D,#E{
 	color: red;
 }
 /* class类 */
 .go{
-	color:chartreuse;
+	color:white;
+	background-color: black;
+	font-size:50px;
+}
+.az{
+	/* width: 800px; */
+	/* height: 20px; */
+	background-color:darkgray;
+
+	border: 10px;
+	/* padding-bottom: 20px; */
+	margin-top:50px;
 }
 
 /* 伪元素 */
