@@ -42,3 +42,7 @@ https://baike.baidu.com/item/2018%E5%B9%B4%E4%BF%84%E7%BD%97%E6%96%AF%E4%B8%96%E
 
 https://baijiahao.baidu.com/s?id=1623884034876097005&wfr=spider&for=pc
 
+
+`盒子模型-水平方向的布局`_
+
+.. _`盒子模型-水平方向的布局`: https://www.bilibili.com/video/BV1XJ411X7Ud?p=49
