@@ -8,3 +8,9 @@ li{
 	font-weight: 100;
 	color: burlywood;
 }
+#D,#E{
+	color: red;
+}
+.go{
+	color:chartreuse;
+}
