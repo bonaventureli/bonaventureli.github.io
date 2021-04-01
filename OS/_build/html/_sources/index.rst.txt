@@ -14,6 +14,7 @@ Welcome to Operating system's documentation!
    usage/ucos.rst
    usage/linux.rst
    usage/cmsis.rst
+   usage/tmux.rst
 
 
 
