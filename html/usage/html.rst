@@ -44,5 +44,3 @@ https://www.w3school.com.cn/html/index.asp
 `图片转base64`_
 
 .. _`图片转base64`: http://tool.chinaz.com/tools/imgtobase
-
-html.rst
