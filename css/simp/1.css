@@ -11,12 +11,29 @@ li{
 #D,#E{
 	color: red;
 }
+/* class类 */
 .go{
 	color:chartreuse;
 }
+
+/* 伪元素 */
 a:hover{
 	font-size: 50px;
 }
 /* a:link{
 	color:red;
 } */
+
+
+p::first-letter{
+	font-size: 50px;
+}
+
+p::first-line{
+	background-color: yellow;
+}
+
+p::selection{
+	background-color: greenyellow;
+}
+
