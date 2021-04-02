@@ -8,3 +8,5 @@ HTTP是一个基于TCP/IP通信协议来传递数据（HTML 文件, 图片文件
 
 https://www.runoob.com/http/http-tutorial.html
 
+https://developer.mozilla.org/en-US/docs/Web/HTTP
+
