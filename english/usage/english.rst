@@ -88,6 +88,10 @@ CGTV_
       - 英[aɪˈdentəti]美[aɪˈdentəti]
       - n.身份; 个性; 一致
       - https://www.iciba.com/word?w=identity
+    * - canticle
+      - 英[ˈkæntɪkl]美[ˈkæntɪkəl]
+      - n.圣歌，小歌曲，颂歌
+      - https://www.iciba.com/word?w=canticle
 
 
 

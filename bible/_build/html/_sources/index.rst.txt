@@ -11,7 +11,6 @@ Welcome to Bible's documentation!
    :caption: Contents:
 
    usage/bible.rst
-   usage/music.rst
 
 
 

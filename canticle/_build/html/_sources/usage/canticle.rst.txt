@@ -1,4 +1,4 @@
-答唱咏
+canticle
 =================
 
 
@@ -18,3 +18,8 @@
 .. _`圣周六 读经五答唱咏`: https://mp.weixin.qq.com/s?__biz=MzIxNjc5MzAyNA==&mid=2247485008&idx=5&sn=92c561158c76d2f892586ef4c196125a&chksm=9782ecffa0f565e9b32be304948f5b32616e152d1edcece1cc9ced924471a29712bab00de7a1&mpshare=1&scene=1&srcid=03226bz06uh0QlJboYh98VzK&sharer_sharetime=1616597703693&sharer_shareid=70baa33f30e0ffe5e385cf9304c14092&exportkey=ASURNfHX%2FY8wfK3CqVX1lVM%3D&pass_ticket=quQLITi0E7mC9Wu9fV90dxKDMm69UlG2HTkBLuwEJu%2Byegb2t4a6QCoSN4BlIKNw&wx_header=0#rd
 
 .. _`圣周六 读经七答唱咏`: https://mp.weixin.qq.com/s?__biz=MzIxNjc5MzAyNA==&mid=2247485008&idx=6&sn=0c7333a5e41b884e794fc66ff6cd7e9f&chksm=9782ecffa0f565e9f128d68866dba1f5168ab7ea27deffd5620f78804f6c593bfc83ec635ec3&mpshare=1&scene=1&srcid=0322m1cTZZ2UNDg5rgpYsTyc&sharer_sharetime=1616597849592&sharer_shareid=70baa33f30e0ffe5e385cf9304c14092&exportkey=AZ8MIqXWFzlYMGRZzzZwNsE%3D&pass_ticket=quQLITi0E7mC9Wu9fV90dxKDMm69UlG2HTkBLuwEJu%2Byegb2t4a6QCoSN4BlIKNw&wx_header=0#rd
+
+`答唱咏曲集`_
+
+.. _`答唱咏曲集`: https://hec9sr20xg.feishu.cn/file/boxcnUabtQ7bytu6AjQhmSEJI0E
+
