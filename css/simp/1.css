@@ -40,6 +40,7 @@ span{
 a:hover{
 	/* 鼠标放在超链接上效果 */
 	font-size: 50px;
+	color:hotpink;
 }
 /* a:link{
 	color:red;
