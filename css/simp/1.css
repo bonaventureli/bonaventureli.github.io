@@ -13,6 +13,12 @@ li{
 	font-weight: 100;
 	color: burlywood;
 }
+
+/* 每个li前加一个元素 */
+li::before{
+	content: '✝';
+	color:#666;
+}
 span{
 	/* background-color:chocolate; */
 	font-family: 'Courier New', Courier, monospace;
