@@ -1,8 +1,11 @@
 a{
 	font-size:medium;
+	/* 超链接字体颜色 */
 	color:rgb(68, 70, 170);
 	font-style:italic;
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+	/* 去掉下划线 */
+	text-decoration: none;
 }
 li{
 	font-weight: 100;
@@ -30,10 +33,12 @@ span{
 	border: 10px;
 	padding-bottom: 30px;
 	margin-top:50px;
+
 }
 
 /* 伪元素 */
 a:hover{
+	/* 鼠标放在超链接上效果 */
 	font-size: 50px;
 }
 /* a:link{
