@@ -13,7 +13,7 @@ span{
 	font-family: 'Courier New', Courier, monospace;
 }
 
-#D,#E{
+#D,#E,#capital{
 	color: red;
 }
 /* class类 */
