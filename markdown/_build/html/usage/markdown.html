@@ -33,6 +33,65 @@
             
   <div class="section" id="markdown">
 <h1>markdown<a class="headerlink" href="#markdown" title="Permalink to this headline">¶</a></h1>
+<p>在html中引入和显示markdown文件</p>
+<p>在用markdown写开发文档时，由于markdown不支持页面间锚点跳转，于是想到把文档加载到html里来实现</p>
+<p>1.ajax请求加载md
+将请求到的文件添加到 &lt;div id=”content”&gt; 中</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$(function(){
+        $.ajax({
+            type:&quot;get&quot;,
+            url:&quot;./test.md&quot;,
+            dataType:&quot;html&quot;,
+            success:function(res){
+            $(&quot;#content&quot;).append(marked(res));
+            }
+        })
+    })
+</pre></div>
+</div>
+<p>2.解析 xxx.md</p>
+<p>解析需使用marked库，将md文本转化为html DOM，框架Github地址—— <a class="reference external" href="https://github.com/markedjs/marked/tree/master">marked</a></p>
+<p>引入marked.js&lt;script src=”./marked.js”&gt;&lt;/script&gt;</p>
+<p>3.编写css</p>
+<p>由于转化后的md没有了基本的css样式，需要自行编写，其中代码高亮可使用Highlight插件，使用方法可参考highlight.js代码高亮使用</p>
+<p>highlight.js官网地址：<a class="reference external" href="https://highlightjs.org/">https://highlightjs.org/</a></p>
+<p>点击Get Version</p>
+<p>进入后选择你需要高亮的语言，一般Common里的足够，选择完点击下面download即可</p>
+<p>按照官网所述，可通过本地文件引入或cdn方式
+cdn引入</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/styles/default.min.css&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;//cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.16.2/build/highlight.min.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>本地引入
+本地引入时，可根据自己需求引入相应的css</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;./highlight/highlight.pack.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;./highlight/styles/atom-one-light.css&quot;</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>主要需要在页面加载时初始化hljs.initHighlightingOnLoad(),更多使用规则可进官网了解</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">&lt;</span><span class="n">link</span> <span class="n">rel</span><span class="o">=</span><span class="s2">&quot;stylesheet&quot;</span> <span class="n">href</span><span class="o">=</span><span class="s2">&quot;/path/to/styles/default.css&quot;</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">script</span> <span class="n">src</span><span class="o">=</span><span class="s2">&quot;/path/to/highlight.pack.js&quot;</span><span class="o">&gt;&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+<span class="o">&lt;</span><span class="n">script</span><span class="o">&gt;</span><span class="n">hljs</span><span class="o">.</span><span class="n">initHighlightingOnLoad</span><span class="p">();</span><span class="o">&lt;/</span><span class="n">script</span><span class="o">&gt;</span>
+</pre></div>
+</div>
+<p>代码需包含在&lt;pre&gt;&lt;code class=”html”&gt;…&lt;/code&gt;&lt;/pre&gt;结构标签中</p>
+<p>转化后的md 中代码高亮
+由于ajax请求默认是异步的，所以在页面加载完md前，可能highlight已经初始化完导致代码没有高亮，解决办法就是让ajax请求改为同步，请求成功后调用初始化。</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>$(function(){
+        $.ajax({
+            type:&quot;get&quot;,
+            url:&quot;./test.md&quot;,
+            async:false,
+            dataType:&#39;html&#39;,
+            success:function(res){
+             $(&quot;#content&quot;).append(marked(res));
+             hljs.initHighlightingOnLoad();
+            }
+        })
+    })
+</pre></div>
+</div>
 </div>
 
 
