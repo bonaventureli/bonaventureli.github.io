@@ -16,3 +16,10 @@ company
 `博通集成电路`_
 
 .. _`博通集成电路`: http://www.bekencorp.com/index/index/index.html
+
+
+`矽久微电子`_
+
+.. _`矽久微电子`: http://www.siwave.com.cn/
+
+

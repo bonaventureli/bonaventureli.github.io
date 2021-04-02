@@ -13,6 +13,7 @@ Welcome to Company's documentation!
    usage/company.rst
    usage/ximalaya.rst
    usage/nwt.rst
+   usage/sensetime.rst
 
 
 
