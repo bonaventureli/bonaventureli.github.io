@@ -86,3 +86,7 @@ https://paimai.alltobid.com
 电信还是非电信测试
 
 https://www.speedtest.cn/
+
+`驾驶证计分查询`_
+
+.. _`驾驶证计分查询`: https://sh.122.gov.cn/#/inquiry
