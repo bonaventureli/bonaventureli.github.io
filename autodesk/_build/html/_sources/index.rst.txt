@@ -10,6 +10,8 @@ Welcome to Autodesk's documentation!
    :maxdepth: 2
    :caption: Contents:
 
+   usage/autodesk.rst
+
 
 
 Indices and tables
