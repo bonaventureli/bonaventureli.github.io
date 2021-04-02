@@ -6,6 +6,8 @@ a{
 	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 	/* 去掉下划线 */
 	text-decoration: none;
+	/* 字体加粗 */
+	font-weight: bold;
 }
 li{
 	font-weight: 100;
