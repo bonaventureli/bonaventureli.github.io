@@ -92,6 +92,10 @@ CGTV_
       - 英[ˈkæntɪkl]美[ˈkæntɪkəl]
       - n.圣歌，小歌曲，颂歌
       - https://www.iciba.com/word?w=canticle
+    * - punch the clock
+      - 英[pʌntʃ ðə klɔk]美[pʌntʃ ði klɑk]
+      - 打卡
+      - https://www.iciba.com/word?w=punch%20the%20clock
 
 
 
