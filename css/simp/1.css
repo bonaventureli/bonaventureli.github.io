@@ -34,21 +34,31 @@ span{
 	font-size:50px;
 }
 .az{
-	/* width: 800px; */
-	height: 20px;
+	/* height: 20px; */
 	background-color:tomato;
 
 	border: 10px;
-	padding-bottom: 30px;
-	margin-top:50px;
+	/* padding-bottom: 30px; */
+
+	/* 位置固定不动 */
+	position:fixed;
+	/* position:relative; */
+
+	/* 向右移动 */
+	margin-left:500px;
+
+	/* 居中,必须指定width,否则无效 */
+	/* margin: 50px auto; */
+	/* width: 800px; */
+
 
 }
 
 /* 伪元素 */
 a:hover{
 	/* 鼠标放在超链接上效果 */
-	font-size: 50px;
-	color:hotpink;
+	font-size: 40px;
+	color:cornflowerblue;
 }
 /* a:link{
 	color:red;
