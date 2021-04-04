@@ -52,6 +52,8 @@ span{
 	/* 位置固定不动 */
 	position:fixed;
 	/* position:relative; */
+	/* 粘滞定位 */
+	/* position:sticky; */
 
 	/* 向右移动 */
 	/* margin-left:500px; */
