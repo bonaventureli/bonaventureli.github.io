@@ -12,23 +12,40 @@ a{
 li{
 	font-weight: 100;
 	color: burlywood;
+	margin-top:15px;
+	margin-bottom:15px;
+	/* padding:0; */
+
+	/* width:0; */
+}
+
+/* 取消列表前的小圆点 */
+li::marker{
+	content:'';
 }
 
 /* 每个li前加一个元素 */
 li::before{
 	content: '✝';
 	color:#666;
+	/* 与字符间隔 */
+	padding-right:10px;
+	/* 与边框间隔 */
+	margin-left:10px;
 }
 span{
 	/* background-color:chocolate; */
 	font-family: 'Courier New', Courier, monospace;
 }
 
+/* 字母索引 */
 #A,#B,#C,#D,#E,#F,#G,#H,#I,#J,#K,#L,#M,#N,#O,#P,#Q,#R,#S,#T,#U,#V,#W,#X,#Y,#Z{
 	color: red;
+	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 	
 }
 /* class类 */
+/* 跳到最下面 */
 .gobottom{
 	color:white;
 	background-color: black;
@@ -37,23 +54,25 @@ span{
 	position:fixed;
 
 	/* 居中 */
-	width:300px;
+	/* width:300px; */
 	left:0;
 	right:0;
 	margin-left:auto;
 	margin-right: auto;
 }
 /* class类 */
+/* 跳到最上面 */
 .gotop{
-	color:white;
-	background-color: black;
-	font-size:40px;
+	color:black;
+	background-color:white;
+	font-size:auto;
 }
+/* az标题栏 */
 .az{
 	/* height: 20px; */
 	background-color:tomato;
 
-	border: 10px;
+	border: 0px;
 	/* padding-bottom: 30px; */
 
 	/* 位置固定不动 */
@@ -67,18 +86,23 @@ span{
 
 	/* 居中,必须指定width,否则无效 */
 	/* margin: 50px auto; */
-	width: 500px;
+	/* width: 700px; */
+	width: auto;
 	left:0;
 	right:0;
 	margin-left:auto;
 	margin-right: auto;
 
+	font-size:100%;
+
+	/* 靠在最上面 */
+	top:0;
 }
 
 /* 伪元素 */
+/* 鼠标放在超链接上效果 */
 a:hover{
-	/* 鼠标放在超链接上效果 */
-	font-size: 40px;
+	font-size: 30px;
 	color:cornflowerblue;
 }
 /* a:link{
@@ -105,4 +129,10 @@ p::selection{
 	content: '';
 	display: table;
 	clear: both;
+}
+
+.main{
+	/* 和标题栏的间隔 */
+	margin-top:40px;
+	margin-bottom:40px;
 }
