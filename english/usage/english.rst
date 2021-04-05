@@ -96,6 +96,10 @@ CGTV_
       - 英[pʌntʃ ðə klɔk]美[pʌntʃ ði klɑk]
       - 打卡
       - https://www.iciba.com/word?w=punch%20the%20clock
+    * - finance
+      - 英[ˈfaɪnæns]美[ˈfaɪnæns]
+      - n.资金; 财政; 财力
+      - https://www.iciba.com/word?w=finance
 
 
 
