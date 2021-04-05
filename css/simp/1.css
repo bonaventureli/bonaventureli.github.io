@@ -31,7 +31,7 @@ li::before{
 	/* 与字符间隔 */
 	padding-right:10px;
 	/* 与边框间隔 */
-	margin-left:10px;
+	margin-left:0px;
 }
 span{
 	/* background-color:chocolate; */
