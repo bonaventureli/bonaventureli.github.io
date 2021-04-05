@@ -40,6 +40,9 @@ nginx
 docker-machine ip
 
 
+`阿里镜像加速`_
+
+.. _`阿里镜像加速`: https://cr.console.aliyun.com/cn-hangzhou/instances/mirrors
 
 
 

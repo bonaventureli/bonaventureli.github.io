@@ -39,10 +39,9 @@ span{
 }
 
 /* 字母索引 */
-#A,#B,#C,#D,#E,#F,#G,#H,#I,#J,#K,#L,#M,#N,#O,#P,#Q,#R,#S,#T,#U,#V,#W,#X,#Y,#Z{
+#A,#B,#C,#D,#E,#F,#G,#H,#I,#J,#K,#L,#M,#N,#O,#P,#Q,#R,#S,#T,#U,#V,#W,#X,#Y,#Z,#N3,#N4,#N5,#N7{
 	color: red;
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
-	
 }
 /* class类 */
 /* 跳到最下面 */
