@@ -19,6 +19,10 @@ school
 
 .. _`西安交通大学网络学院`: https://www.xjtudlc.com/
 
+1_
+
+.. _1: https://shimo.im/docs/WtJVtkC8qq3rxWxy
+
 同济大学
 
 上海交通大学
