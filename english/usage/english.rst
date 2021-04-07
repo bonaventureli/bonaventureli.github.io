@@ -120,5 +120,28 @@ consistent
 continuous integration and continuous delivery (CI/CD) 
 
 
+Patent Policy
+
+breadth
+
+ascertain
+
+grant
+
+disclosure 
+
+Evolution
+
+
+intermittent
+
+Intellectual Property
+
+
+cofactor
+
+restriction
+
+interoperability
 
 

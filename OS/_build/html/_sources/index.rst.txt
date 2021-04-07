@@ -15,6 +15,8 @@ Welcome to Operating system's documentation!
    usage/linux.rst
    usage/cmsis.rst
    usage/tmux.rst
+   usage/os.rst
+   usage/mbed.rst
 
 
 
