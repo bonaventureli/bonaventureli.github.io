@@ -144,4 +144,36 @@ restriction
 
 interoperability
 
+Wrap
+
+memo
+
+Ciphertext
+
+intermediate 
+
+disclosure
+
+furnished 
+
+granted 
+
+perpetual 
+
+acknowledgement
+
+daemon
+
+alphabetical
+
+metadata
+
+distinct
+
+coefficient
+
+matured
+
+comprehensible
+
 
