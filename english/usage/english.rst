@@ -103,6 +103,22 @@ CGTV_
 
 
 
+loosely
+
+isolated
+
+simultaneously
+
+lightweight
+
+orchestrated
+
+hybrid
+
+consistent
+
+continuous integration and continuous delivery (CI/CD) 
+
 
 
 
