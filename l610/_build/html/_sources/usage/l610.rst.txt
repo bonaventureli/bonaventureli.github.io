@@ -30,3 +30,8 @@ api_
 `规范`_
 
 .. _`规范`: https://hec9sr20xg.feishu.cn/file/boxcno9DKiYgqEHMVSKIRWdiLVh
+
+doc_
+
+.. _doc: https://hec9sr20xg.feishu.cn/docs/doccnyeVSjyMxsyfa82JA2zAiG6#
+
