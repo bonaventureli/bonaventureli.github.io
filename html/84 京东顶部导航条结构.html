@@ -28,10 +28,11 @@
 			width: 100%;
 			/* 设置背景颜色 */
 			background-color: #e3e4e5;
+			height: 30px;
 			/* 设置行高，没有设置高度,使文字垂直居中*/
 			line-height: 30px;
 			/* 设置下边框 */
-			border-bottom: 1px red solid;
+			border-bottom: 1px #ddd solid;
 
 		}
 
@@ -67,6 +68,31 @@
 			font-size: 14px;
 			color: #f10215;
 		}
+		/* 设置城市列表的效果 */
+		.location .city-list{
+			display: none;
+			width: 320px;
+			height: 436px;
+			background-color: white;
+			border: 1px solid rgb(204,204,204);
+			/* 设置绝对定位，使其不占页面的位置 */
+			position:absolute;
+			box-shadow: 0 2px 2px rgba(0,0,0,0.2);
+		}
+		/*当鼠标移入到location时，让city-list显示  */
+		.location:hover .city-list{
+			display:block;
+		}
+
+		.current-city{
+			padding: 0 10px;
+		}
+		/* 设置current-city的移入的效果 */
+		.current-city:hover{
+			background-color: white;
+			border: 1px solid rgb(204,204,204);
+			border-bottom: none;
+		}
 
 		/* 设置shortcut */
 		.shortcut {
@@ -98,6 +124,11 @@
 				<div class="current-city">
 					<i class="fas fa-map-marker-alt"></i>
 					<a href="javascript:;">北京</a>
+				</div>
+
+				<!-- 放置城市列表的div -->
+				<div class="city-list">
+
 				</div>
 			</div>
 			<!-- 右侧的菜单 -->

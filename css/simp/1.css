@@ -1,5 +1,5 @@
 a{
-	font-size:medium;
+	font-size:20px;
 	/* 超链接字体颜色 */
 	color:rgb(68, 70, 170);
 	font-style:italic;
@@ -41,6 +41,7 @@ span{
 /* 字母索引 */
 #A,#B,#C,#D,#E,#F,#G,#H,#I,#J,#K,#L,#M,#N,#O,#P,#Q,#R,#S,#T,#U,#V,#W,#X,#Y,#Z,#N3,#N4,#N5,#N7{
 	color: red;
+	font-size:30px;
 	font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
 /* class类 */
@@ -101,7 +102,7 @@ span{
 /* 伪元素 */
 /* 鼠标放在超链接上效果 */
 a:hover{
-	font-size: 30px;
+	/* font-size: 30px; */
 	color:cornflowerblue;
 }
 /* a:link{
