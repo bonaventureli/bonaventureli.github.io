@@ -1,6 +1,15 @@
 PhotoShop
 =======================
 
+`Creative Cloud tutorials`_
+
+.. _`Creative Cloud tutorials`: https://helpx.adobe.com/cn/creative-cloud/tutorials-explore.html?guid=8bfee169-d183-47b8-b740-5588fe6a92e7&product=Creative%20Cloud%20Desktop&product-version=5.4.2.541&mv=product&mv2=accc#
+
+
+`Photoshop 用户指南`_
+
+.. _`Photoshop 用户指南`: https://helpx.adobe.com/cn/photoshop/user-guide.html
+
 
 `英文`_
 
