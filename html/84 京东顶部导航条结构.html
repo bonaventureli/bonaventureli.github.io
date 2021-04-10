@@ -77,6 +77,8 @@
 			border: 1px solid rgb(204,204,204);
 			/* 设置绝对定位，使其不占页面的位置 */
 			position:absolute;
+			top:31px;
+			z-index:999;
 			box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 		}
 		/*当鼠标移入到location时，让city-list显示  */
@@ -86,12 +88,21 @@
 
 		.current-city{
 			padding: 0 10px;
+			/* transparent 边框透明 */
+			border: 1px solid transparent; 
+			border-bottom: none;
+			
+			/* padding-bottom: 1px; */
+			position: relative;
+			/* 设置层级 */
+			z-index: 9999;
 		}
 		/* 设置current-city的移入的效果 */
-		.current-city:hover{
+		.location:hover .current-city{
 			background-color: white;
 			border: 1px solid rgb(204,204,204);
 			border-bottom: none;
+			padding-bottom: 1px;
 		}
 
 		/* 设置shortcut */
@@ -166,8 +177,7 @@
 					<i class="fas fa-angle-down"></i>
 				</li>
 				<li class="line"></li>
-				<li><a href="javascript:;">手机京东</a></li>
-
+					<span>手机京东</span>
 			</ul>
 		</div>
 	</div>
