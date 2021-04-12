@@ -1,6 +1,10 @@
 PhotoShop
 =======================
 
+`Illustrator 教程`_
+
+.. _`Illustrator 教程`: https://helpx.adobe.com/cn/illustrator/tutorials.html?mv=product&mv2=ai
+
 `Creative Cloud tutorials`_
 
 .. _`Creative Cloud tutorials`: https://helpx.adobe.com/cn/creative-cloud/tutorials-explore.html?guid=8bfee169-d183-47b8-b740-5588fe6a92e7&product=Creative%20Cloud%20Desktop&product-version=5.4.2.541&mv=product&mv2=accc#

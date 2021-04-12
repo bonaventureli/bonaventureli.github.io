@@ -179,3 +179,7 @@ comprehensible
 Command-line interfaces (CLIs)
 preface
 
+revenue
+expenses
+net profit
+
