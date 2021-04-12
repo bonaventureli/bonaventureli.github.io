@@ -100,86 +100,103 @@ CGTV_
       - 英[ˈfaɪnæns]美[ˈfaɪnæns]
       - n.资金; 财政; 财力
       - https://www.iciba.com/word?w=finance
-
-
-
-loosely
-
-isolated
-
-simultaneously
-
-lightweight
-
-orchestrated
-
-hybrid
-
-consistent
-
-continuous integration and continuous delivery (CI/CD) 
-
-
-Patent Policy
-
-breadth
-
-ascertain
-
-grant
-
-disclosure 
-
-Evolution
-
-
-intermittent
-
-Intellectual Property
-
-
-cofactor
-
-restriction
-
-interoperability
-
-Wrap
-
-memo
-
-Ciphertext
-
-intermediate 
-
-disclosure
-
-furnished 
-
-granted 
-
-perpetual 
-
-acknowledgement
-
-daemon
-
-alphabetical
-
-metadata
-
-distinct
-
-coefficient
-
-matured
-
-comprehensible
-
-Command-line interfaces (CLIs)
-preface
-
-revenue
-expenses
-net profit
-
+      - loosely
+      - 英[ˈlu:sli]美[ˈluslɪ]
+      - adv.松散的，蓬松的; 轻易，轻松地，随手地，随意地; 
+      - https://www.iciba.com/word?w=loosely
+      - isolated
+      - 英[ˈaɪsəleɪtɪd]美[ˈaɪsəleɪtɪd]
+      - adj.隔离的; 孤独的; 单独的; 偏远的
+      - https://www.iciba.com/word?w=isolated
+      - simultaneously
+      - 英[ˌsɪməlˈteɪniəsli]美[ˌsaɪməlˈteɪniəsli]
+      - adv. 同时地; 一壁; 齐; 一齐
+      - lightweight
+      - 英[ˈlaɪtweɪt]美[ˈlaɪtweɪt]
+      - adj. 轻量的; 不重要的
+      - https://www.iciba.com/word?w=lightweight
+      - orchestrated
+      - [ˈɔ:kɪˌstreɪtid]
+      - v. 和谐地安排，精心策划
+      - hybrid
+      - 英[ˈhaɪbrɪd]美[ˈhaɪbrɪd]
+      - n 杂种; 杂交生成的生物体; 混合物; 混合词
+      - https://www.iciba.com/word?w=hybrid
+      - consistent
+      - 英[kənˈsɪstənt]美[kənˈsɪstənt]
+      - adj. 一致的; 连贯的; 始终如一的
+      - https://www.iciba.com/word?w=consistent
+      - continuous integration and continuous delivery (CI/CD) 
+      - Patent Policy
+      - breadth
+      - 英[bredθ]美[bredθ]
+      - n. 宽度; （知识、兴趣等的）广泛
+      - https://www.iciba.com/word?w=breadth
+      - ascertain
+      - 英[ˌæsəˈteɪn]美[ˌæsərˈteɪn]
+      - v. 查明，弄清; 确定
+      - https://www.iciba.com/word?w=ascertain
+      - grant
+      - 英[ɡrɑːnt]美[ɡrænt]
+      - v. 授予; 承认; 允许
+      - https://www.iciba.com/word?w=grant
+      - disclosure 
+      - 英[dɪsˈkləʊʒə(r)]美[dɪsˈkloʊʒə(r)]
+      - n. 公开; 泄露，揭露
+      - https://www.iciba.com/word?w=disclosure
+      - Evolution
+      - 英[ˌiːvəˈluːʃn]美[ˌiːvəˈluːʃn]
+      - [电影]进化
+      - https://www.iciba.com/word?w=Evolution
+      - intermittent
+      - 英[ˌɪntəˈmɪtənt]美[ˌɪntərˈmɪtənt]
+      - adj. 间歇的; ，断断续续的; 间歇性
+      - https://www.iciba.com/word?w=intermittent
+      - Intellectual Property
+      - cofactor
+      - 英[kəʊ'fæktə]美['koʊˌfæktə]
+      - n. 余因子，代数合取; 余因数; 辅因子
+      - https://www.iciba.com/word?w=cofactor
+      - restriction
+      - 英[rɪˈstrɪkʃn]美[rɪˈstrɪkʃn]
+      - n. 限制，限定; 拘束，束缚; 管制
+      - https://www.iciba.com/word?w=restriction
+      - interoperability
+      - 英['ɪntərɒpərə'bɪlətɪ]美['ɪntərɒpərə'bɪlətɪ]
+      - n. 互用性，协同工作的能力
+      - https://www.iciba.com/word?w=interoperability
+      - Wrap
+      - 英[ræp]美[ræp]
+      - v. 包，裹; 用…绕住; 使文字
+      - https://www.iciba.com/word?w=Wrap
+      - memo
+      - 英[ˈmeməʊ]美[ˈmemoʊ]
+      - n. 备忘录; （美）内部通知
+      - https://www.iciba.com/word?w=memo
+      - Ciphertext
+      - 英['saɪfətekst]美['saɪfəˌtekst]
+      - n. 密码，暗记文; 密文
+      - https://www.iciba.com/word?w=Ciphertext
+      - intermediate 
+      - disclosure
+      - furnished 
+      - granted 
+      - perpetual 
+      - acknowledgement
+      - daemon
+      - alphabetical
+      - metadata
+      - distinct
+      - coefficient
+      - matured
+      - comprehensible
+      - Command-line interfaces (CLIs)
+      - preface
+      - revenue
+      - expenses
+      - net profit
+      - undergo
+      - hopping
+      - combat
+      - interference
+      - fading
