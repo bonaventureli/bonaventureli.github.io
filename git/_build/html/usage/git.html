@@ -33,38 +33,54 @@
             
   <div class="section" id="git">
 <h1>git 常用指令<a class="headerlink" href="#git" title="Permalink to this headline">¶</a></h1>
-<p>merge develop分支的指定文件替换当前分支指定文件</p>
+<div class="section" id="merge-develop">
+<h2>merge develop分支的指定文件替换当前分支指定文件<a class="headerlink" href="#merge-develop" title="Permalink to this headline">¶</a></h2>
 <p>git checkout develop app/component/component.c</p>
-<p>显示提交摘要信息</p>
+</div>
+<div class="section" id="id1">
+<h2>显示提交摘要信息<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p>git log –stat</p>
+</div>
+<div class="section" id="id2">
+<h2>修改提交用户名和邮箱信息<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p>找到项目所在目录下的 .git/文件夹，进入.git/文件夹，然后执行如下命令分别设置用户名和邮箱：</p>
 <div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">name</span> <span class="s2">&quot;abc&quot;</span>
 <span class="n">git</span> <span class="n">config</span> <span class="n">user</span><span class="o">.</span><span class="n">email</span> <span class="s2">&quot;d@qq.com&quot;</span>
 </pre></div>
 </div>
-<p>提交了不想提交的测试代码或commit写错</p>
-<p>git reset (想回退的位置)</p>
-<p>git reset fc423ded67a726cc6886926c23d43ff861914fbf</p>
-<p>git checkout .</p>
-<p>git pull</p>
-<p>merge 本地和云端分支，然后提交</p>
-<p>ssh-keygen
-———————   -</p>
+</div>
+<div class="section" id="commit">
+<h2>提交了不想提交的测试代码或commit写错<a class="headerlink" href="#commit" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>git reset (想回退的位置)
+git reset fc423ded67a726cc6886926c23d43ff861914fbf
+git checkout .
+git pull
+merge 本地和云端分支，然后提交
+</pre></div>
+</div>
+</div>
+<div class="section" id="ssh-keygen">
+<h2>ssh-keygen<a class="headerlink" href="#ssh-keygen" title="Permalink to this headline">¶</a></h2>
 <p>git config –global user.name “xb12369”</p>
 <p>git config –global user.email “<a class="reference external" href="mailto:1234&#37;&#52;&#48;qq&#46;com">1234<span>&#64;</span>qq<span>&#46;</span>com</a>”</p>
 <p>ssh-keygen -t rsa -C “<a class="reference external" href="mailto:1234&#37;&#52;&#48;qq&#46;com">1234<span>&#64;</span>qq<span>&#46;</span>com</a>”</p>
 <p>或 git revert fc423ded67a726cc6886926c23d43ff861914fbf</p>
 <p><a class="reference external" href="https://www.jianshu.com/p/5c562c0790fd">https://www.jianshu.com/p/5c562c0790fd</a></p>
-<p>撤销操作</p>
+</div>
+<div class="section" id="id3">
+<h2>撤销操作<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C">https://git-scm.com/book/zh/v2/Git-%E5%9F%BA%E7%A1%80-%E6%92%A4%E6%B6%88%E6%93%8D%E4%BD%9C</a></p>
+</div>
 <div class="section" id="signing-up-for-a-new-github-account">
 <h2>Signing up for a new GitHub account<a class="headerlink" href="#signing-up-for-a-new-github-account" title="Permalink to this headline">¶</a></h2>
 <p><a class="reference external" href="https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account">https://docs.github.com/en/github/getting-started-with-github/signing-up-for-a-new-github-account</a></p>
 </div>
-<div class="section" id="id1">
-<h2>git 查看远程仓库地址<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id4">
+<h2>git 查看远程仓库地址<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p>git remote -v</p>
-<p>git 删除tag</p>
+</div>
+<div class="section" id="git-tag">
+<h2>git 删除tag<a class="headerlink" href="#git-tag" title="Permalink to this headline">¶</a></h2>
 <p>git tag -d</p>
 </div>
 </div>
@@ -89,8 +105,15 @@
 <p class="caption"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">git 常用指令</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#merge-develop">merge develop分支的指定文件替换当前分支指定文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">显示提交摘要信息</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2">修改提交用户名和邮箱信息</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#commit">提交了不想提交的测试代码或commit写错</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ssh-keygen">ssh-keygen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id3">撤销操作</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#signing-up-for-a-new-github-account">Signing up for a new GitHub account</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1">git 查看远程仓库地址</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">git 查看远程仓库地址</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#git-tag">git 删除tag</a></li>
 </ul>
 </li>
 </ul>
