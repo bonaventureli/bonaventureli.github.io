@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<meta name="viewport" content="width=device-width,initial-scale=1.0, mininum-scale=1.0, maximum-scale=1.0, user-scalable=no" charset="UTF-8"></meta>
+<title>main</title>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: red;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+</style>
+<body>
+<ul>
+  <li><a class="active" href=".">Home</a></li>
+  <li class="dropdown"><a href="" class="dropbtn">developer</a>
+    <div class="dropdown-content">
+      <a href="https://exmail.qq.com">exmail</a>
+      <a href="https://bitbucket.ingeek.com">Bitbucket</a>
+      <a href="https://crucible.ingeek.com">Crucible</a>
+      <a href="https://tower.im/users/sign_in">tower</a>
+    </div>
+  </li>
+  <li class="dropdown"><a href="" class="dropbtn">Clouds</a>
+    <div class="dropdown-content">
+      <a href="https://www.eclipse.org">eclipse</a>
+      <a href="https://www.navicat.com.cn/">navicat</a>
+    </div>
+  </li>
+  <li class="dropdown"><a href="" class="dropbtn">Mobile</a>
+    <div class="dropdown-content">
+      <a href="https://developers.weixin.qq.com/miniprogram/dev/index.html?t=19052420">微信小程序</a>
+    </div>
+  </li>
+  <li class="dropdown"><a href="" class="dropbtn">Car</a>
+    <div class="dropdown-content">
+      <a href="#">nrf52832</a>
+      <a href="https://www.st.com/content/st_com/en/products/nfc/st25-nfc-rfid-tags-readers/st25-nfc-rfid-readers/st25r3914.html">ST25R3914</a>
+      <a href="http://www.ti.com/tool/launchxl-cc2640r2#1">CC2640R2F lauchPad</a>
+      <a href="http://dev.ti.com/tirex/explore/node?node=AJ5fm930nQt.aF13eSqExg__krol.2c__LATEST">CC2640R2 SDK</a>
+      <a href="https://www2.renesas.cn/cn/zh/products/microcontrollers-microprocessors/rh850/rh850f1x/rh850f1l.html#tools">RH850/F1L</a>
+      <a href="https://www.nxp.com/products/processors-and-microcontrollers/arm-based-processors-and-mcus/kinetis-cortex-m-mcus/w-serieswireless-conn.m0-plus-m4/kw36-kw35-kinetis-kw36-35-automotive-qualified-bluetooth5-wireless-mcus-based-on-arm-cortex-m0-plus:KW36-35">KW36A</a>
+      <a href="https://www2.renesas.cn/cn/zh/products/microcontrollers-microprocessors/rh850/rh850f1x/rh850f1l/device/R7F7010254AFP.html#overviewInfo">R7F7010254AFP</a>
+      <a href="https://www2.renesas.cn/cn/zh/products/microcontrollers-microprocessors/rh850/rh850f1x/rh850f1l/device/R7F7010233AFP.html#productInfo">R7F7010233AFP</a>
+    </div>
+  </li>
+  <li class="dropdown"><a href="" class="dropbtn">SecuritySDK</a>
+    <div class="dropdown-content">
+      <a href="https://www.javacardos.com/tools/pyresman">pyResMan</a>
+      <a href="https://www.gemalto.com/japan-site/support-site/uma-site/Documents/PCUSB-TRUMAV1.0.pdf#search=GemPcCCID">PCUSB</a>
+      <a href="https://www.javacardos.com/tools/jcalgmaster">JCAlgMaster</a>
+      <a href="https://github.com/matt-wu/AES">AES</a>
+    </div>
+  </li>
+  <li class="dropdown"><a href="" class="dropbtn">Cooperate</a>
+    <div class="dropdown-content">
+      <a href="http://www.yodosmart.com/">云动智能</a>
+      <a href="http://www.cjae.com.cn/">重庆集诚汽车电子</a>
+      <a href="http://www.zotye.com/">众泰汽车</a>
+      <a href="https://www.bluetooth.com/specifications/assigned-numbers/company-identifiers/">SIG-0x0759</a>
+    </div>
+  </li>
+  <li class="dropdown"><a href="#" class="dropbtn">document</a>
+    <div class="dropdown-content">
+      <a href="https://infocenter.nordicsemi.com/index.jsp">nrf52832</a>
+      <a href="https://infocenter.nordicsemi.com/index.jsp?topic=%2Fstruct_nrf52%2Fstruct%2Fnrf52832.html&cp=3_1">nRF52832 Product Specification v1.4
+</a>
+      <a href="http://dev.ti.com/tirex/explore/node?node=AJ5fm930nQt.aF13eSqExg__krol.2c__LATEST">cc2640</a>
+      <a href="https://community.nxp.com/docs/DOC-332703">Creating a custom profile using NXP BLE stack – Server</a>
+      <a href="https://www.nxp.com/docs/en/reference-manual/KSDK20APIRM.pdf">Kinetis SDK v.2.0 API Reference Manual
+      <a href="https://www.nxp.com/docs/en/user-guide/KSDK12GSUG.pdf">Getting Started with Kinetis SDK (KSDK) v.1.2
+</a>
+      <a href="https://mcuxpresso.nxp.com/api_doc/comp/91/index.html">Bluetooth Low Energy Host Stack  Rev. 4 </a>
+      <a href="https://mcuxpresso.nxp.com/api_doc/comp/90/index.html">Generic FSK Link Layer  Rev. 2 </a>
+      <a href="https://mcuxpresso.nxp.com/api_doc/dev/439/index.html">MCUXpresso SDK API Reference Manual  Rev. 0</a>
+      <a href="https://mcuxpresso.nxp.com/api_doc/comp/89/index.html">IEEE 802.15.4 MAC and PHY  Rev. 2 </a>
+      <a href="https://mcuxpresso.nxp.com/api_doc/comp/92/Thread_files/GUID-30D251D6-6584-43E2-AECC-148C82B966BB.pdf">Kinetis Thread Stack API Reference Manual
+</a>
+      <a href="https://www2.renesas.cn/cn/zh/doc/products/tool/doc/004/r20ut2889ej0102_ri85v4rhcd.pdf">RI850V4 V2 Real-Time Operating System </a>
+      <a href="https://www2.renesas.cn/cn/zh/products/software-tools/software-os-middleware-driver/itron-os/ri850v4-v2-for-rh850-family.html">RI850V4 V2 Real-time OS for RH850 Family</a>
+      <a href="https://www2.renesas.cn/cn/zh/doc/products/tool/doc/005/r20ut3679ej0101_ri85v4rhrn.pdf">RH850 Family Real-Time OS RI850V4 V2.01.01 </a>
+    </div>
+  </li>
+  <li class="dropdown"><a href="#" class="dropbtn">technology</a>
+    <div class="dropdown-content">
+      <a href="https://www.nordicsemi.com">nordic</a>
+      <a href="https://www.ti.com">ti</a>
+      <a href="https://www.bluetooth.com">bluetooth</a>
+      <a href="https://www.cypress.com">cypress</a>
+      <a href="https://www.renesas.com/us/en/">renesas</a>
+      <a href="https://www.freertos.org/RTOS.html">freertos</a>
+      <a href="https://www.micrium.com/rtos/kernels/">ucosiii</a>
+      <a href="https://www.vector.com/">Vector</a>
+    </div>
+  </li>
+  <li class="dropdown"><a href="#" class="dropbtn">IDE</a>
+    <div class="dropdown-content">
+      <a href="https://mcuxpresso.nxp.com/en/welcome">MCUXpresso</a>
+      <a href="https://www.keil.com/demo/eval/arm.htm">keil</a>
+      <a href="https://www.nxp.com/search?category=softwaretools&keyword=KSDK&filter=deviceTax>>c718&siblings=false
+">KSDK</a>
+      <a href="https://mcuxpresso.nxp.com/en/builder">MCUXpresso SDK Builder</a>
+      <a href="https://mcuxpresso.nxp.com/en/dashboard?uvid=107257">MCUXpresso SDK Dashboard</a>
+      <a href="https://www2.renesas.cn/cn/zh/software/D3017700.html">[Trial Software] RI850V4 V2.01.01 Real-time OS for RH850 Family</a>
+      <a href="https://www.renesas.com/us/en/products/software-tools/tools/ide/csplus.html">CS+</a>
+      <a href="https://www.renesas.com/us/en/software/D4000626.html">CS+ Code Generator for RH850 V1.03.00</a>
+    </div>
+  </li>
+</ul>
+</body>
+</html>

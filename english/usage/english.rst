@@ -270,4 +270,8 @@ CGTV_
 - net profit
 - solely
 - precede
-- 
+- compound
+- implicit
+- corrigendum
+- collaborators
+- a
