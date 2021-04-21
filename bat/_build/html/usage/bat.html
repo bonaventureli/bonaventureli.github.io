@@ -65,6 +65,13 @@ copy abc.bin ddd.bin</p>
 <p>copy /b aaa.bin + bbb.bin ccc.bin</p>
 <p>pause</p>
 </div>
+<div class="section" id="cd-dp0">
+<h2>%cd% %~dp0<a class="headerlink" href="#cd-dp0" title="Permalink to this headline">¶</a></h2>
+<p>%cd%和%~dp0都能用来表示当前目录，但是他们在不同的使用场景下，功能却不相同：</p>
+<p>%cd%代表的是当前工作目录（current working directory，variable）；</p>
+<p>%~dp0代表的是当前批处理文件所在完整目录（the batch file’s directory，fixed）。</p>
+<p><a class="reference external" href="http://www.cygwin.com/">http://www.cygwin.com/</a></p>
+</div>
 </div>
 
 
@@ -92,6 +99,7 @@ copy abc.bin ddd.bin</p>
 <li class="toctree-l2"><a class="reference internal" href="#id3">重命名文件</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#id4">删除文件</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#merge">merge文件</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cd-dp0">%cd% %~dp0</a></li>
 </ul>
 </li>
 </ul>

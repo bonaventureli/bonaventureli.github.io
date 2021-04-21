@@ -42,3 +42,15 @@ copy /b aaa.bin + bbb.bin ccc.bin
 
 pause
 
+
+%cd% %~dp0
+---------------
+
+%cd%和%~dp0都能用来表示当前目录，但是他们在不同的使用场景下，功能却不相同：
+
+%cd%代表的是当前工作目录（current working directory，variable）；
+
+%~dp0代表的是当前批处理文件所在完整目录（the batch file's directory，fixed）。
+
+http://www.cygwin.com/
+
