@@ -1,5 +1,0 @@
-Zeplin
-===============
-
-https://zeplin.io/
-

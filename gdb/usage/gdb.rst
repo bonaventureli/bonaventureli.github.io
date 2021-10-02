@@ -1,4 +1,0 @@
-GDB
-==========
-
-http://www.gnu.org/software/gdb/documentation/

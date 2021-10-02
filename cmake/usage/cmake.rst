@@ -1,5 +1,0 @@
-CMake
-============
-
-https://cmake.org/
-

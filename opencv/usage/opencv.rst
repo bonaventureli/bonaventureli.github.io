@@ -1,5 +1,0 @@
-OpenCV
-===========
-
-https://opencv.org/
-

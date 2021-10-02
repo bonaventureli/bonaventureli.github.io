@@ -1,5 +1,0 @@
-BeagleBone
-======================
-
-http://beagleboard.org/
-

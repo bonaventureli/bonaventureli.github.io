@@ -1,6 +1,0 @@
-RH850
-============
-
-`rh850 datasheet`_
-
-.. _`rh850 datasheet`: https://hec9sr20xg.feishu.cn/file/boxcnuFb7Uxo7s5lvKlGhAw9Brg

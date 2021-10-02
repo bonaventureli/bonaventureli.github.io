@@ -1,5 +1,0 @@
-meld
-=============
-
-http://meldmerge.org/
-
